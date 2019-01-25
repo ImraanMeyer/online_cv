@@ -1,38 +1,58 @@
 html, body {
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
+
 body {
-    scroll-behavior: smooth 0.4s ease-in;
+    font-weight: 400;
     color: #f5f5f5;
     margin: 0;
-    line-height: 1.8em;
+    scroll-behavior: 0.4s ease-in;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 h1,
 h2,
-h3, {
-    font-family: 'Merri Weather', serif;
-    font-weight: thin;
-    margin: 0;  
-}
-
-h1 {
-    font-size: 5vw;
-}
-
-p {
-    font-family: 'Poppins', sans-serif;
+h3 {
+    font-family: 'Merriweather', serif;
     font-weight: 400;
-    font-size: 2vw; 
-    margin: 0
+    margin-bottom: 1em;
 }
 
+.title {
+    font-size: 6vw;
+    margin-inline-start: 4em;
+    margin-inline-end: 4em;
+    
+    margin-top: 0px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 10px;
+}
+
+h1::after {
+    content: '';
+    margin-top: 0.1em;
+    background-color: lightsalmon;
+    width: 100%;
+    height: 4px;
+    display: block;
+}
+
+p { 
+    font-size: 2vw;
+    font-family: 'Poppins', 'sans-serif';
+    font-weight: 300;
+    margin: 0; 
+}
 .site-grid {
     display: grid;
     grid-template-columns: 90px 3fr;
-    grid-template-rows: 100vh;
+    grid-template-rows: 100vh 100vh;
     grid-template-areas: 
         "nav header"
         "nav main"
@@ -73,17 +93,50 @@ a li {
     opacity: 1;
 }
 
-.hero {
-    grid-area: header;
-    background-image: linear-gradient(rgb(63, 160, 126),#f5f5f5);
-    height: 100vh;
-    /* text-align: center; */
-    padding: 2rem;
+.fas:active {
+    color: lightsalmon;
+    font-size: 2.06vw;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-/* .main {
-    grid-area: main;
-    background-image: linear-gradient( rgb(63,126,126),#f5f5f5);
-    height: 100vh;
+.hero,
+.about {
+    display: grid;
+    grid-template-rows: 70vh 30vh;
+    grid-template-areas: 
+        "main"
+        "bottom" ;
+}
+
+.hero {
+    grid-area: header;
+    /* background-image: linear-gradient(rgb(63,126,126), #f5f5f5); */
+    padding: 2em 0 0 0;
     text-align: center;
+    background-color: rgb(63, 126, 126);
+}
+
+.about {
+    grid-area: main;
+    background-color: rgb(63, 160, 126);
+    padding: 2em 0 0 0;
+    text-align: center;
+}
+
+.bottom-page {
+    grid-area: bottom;
+    background-color: #a7a7a7;
+    width: 100%;
+    height: 30vh;
+}
+
+/* #t2:target #p2,
+#t3:target #p3,
+#t4:target #p4,
+#t5:target #p5 {
+    transform: translateX(-190%);
+    -webkit-transform: translateX(-190%);
+    -moz-transform: translateX(-190%);
+    -o-transform: translateX(-190%);
+    transition-delay: .4s !important;
 } */
