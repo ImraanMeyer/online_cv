@@ -24,14 +24,21 @@ section,
     background-attachment: fixed;
 }
 
-.header:after {
-    content: '';
-    background: url(../../images/wave.png) no-repeat;
-    background-position: center;
-    background-size: cover;
+// .header:after {
+//     content: '';
+//     background: url(../../images/wave.png) no-repeat;
+//     background-position: center;
+//     background-size: cover;
+//     position: absolute;
+//     bottom: 0;
+//     left: 0;
+//     width: 100%;
+//     height: 220px;
+// }
+
+.wave-img {
     position: absolute;
     bottom: 0;
-    left: 0;
     width: 100%;
     height: 220px;
 }
@@ -40,7 +47,7 @@ section,
     padding: 100px ;
 }
 
-img {
-    height: auto;
-    width: 100%;
-}
+// img {
+//     height: auto;
+//     width: 100%;
+// }
