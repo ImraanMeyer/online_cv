@@ -19,7 +19,7 @@ section,
   position: relative;
   background-attachment: fixed; }
 
-.header::before {
+.header:after {
   content: '';
   background: url(../../images/wave.png) no-repeat;
   background-position: center;
