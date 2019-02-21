@@ -1,0 +1,41 @@
+.navbar {
+    top: 0;
+    position: absolute;
+    ul {
+        margin: 0;
+        padding: 1em;
+    }
+    
+        li {
+        display: inline;
+        margin: 2em 2em;
+        list-style-type: none;
+        
+        a {
+            padding: 0.25rem 0;
+            text-decoration: none;
+            color: $rosybrown;
+            transition: all 0.4s
+        }
+        a:hover {
+            color: $outerspace;
+            border-bottom: 4px solid $snow;
+            transition: all 0.4s
+        }
+    }
+}
+
+// .navbar::after {
+//     content: '';
+//     position: absolute;
+//     top: -20px;
+//     bottom: -20px;
+//     left: -20px;
+//     right: -20px;
+//     background-image:url(../images/bg4.jpg);
+//     background-attachment: fixed;
+//     filter: blur(2px);
+//     background-position: center;
+
+// box-shadow: 0 5px 15px rgba(0,0,0,.5);
+// }
