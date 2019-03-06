@@ -224,9 +224,10 @@ body {
   display: grid;
   grid-gap: 1em;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
   grid-template-areas: "card1 card2"; }
   .education-grid .edu-card {
-    max-height: 100vh;
+    max-height: 110vh;
     background: #C1CAD6;
     border-radius: .3em;
     text-align: center;
@@ -256,8 +257,6 @@ body {
       text-align: left;
       padding: 2em;
       grid-area: body; }
-      .education-grid .edu-card .card-body p {
-        line-height: 1.6em; }
       .education-grid .edu-card .card-body ul {
         list-style-type: circle; }
         .education-grid .edu-card .card-body ul li {
@@ -274,8 +273,7 @@ body {
     .education-grid .card2 .sectionOne {
       grid-area: sec1; }
     .education-grid .card2 .sectionTwo {
-      grid-area: sec2;
-      margin: 1.2em 0; }
+      grid-area: sec2; }
 
 .inner-border {
   border: 2px solid #424C55;

@@ -328,11 +328,13 @@ body h1 {
   grid-gap: 1em;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (auto)[2];
+      grid-template-rows: repeat(2, auto);
       grid-template-areas: "card1 card2";
 }
 
 .education-grid .edu-card {
-  max-height: 100vh;
+  max-height: 110vh;
   background: #C1CAD6;
   border-radius: .3em;
   text-align: center;
@@ -384,10 +386,6 @@ body h1 {
   grid-area: body;
 }
 
-.education-grid .edu-card .card-body p {
-  line-height: 1.6em;
-}
-
 .education-grid .edu-card .card-body ul {
   list-style-type: circle;
 }
@@ -425,7 +423,6 @@ body h1 {
 
 .education-grid .card2 .sectionTwo {
   grid-area: sec2;
-  margin: 1.2em 0;
 }
 
 .inner-border {

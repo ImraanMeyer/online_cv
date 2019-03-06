@@ -267,12 +267,13 @@ body {
     display: grid;
     grid-gap: 1em;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas: 
         "card1 card2";
     
 
     .edu-card {
-        max-height: 100vh;
+        max-height: 110vh;
         background: $lavengrey;
         border-radius: .3em;
         text-align: center;
@@ -308,7 +309,7 @@ body {
             text-align: left;
             padding: 2em;
             p {
-                line-height: 1.6em;
+                // line-height: 1.6em;
             }
             grid-area: body;
             ul {
@@ -340,7 +341,7 @@ body {
     }
     .sectionTwo {
         grid-area: sec2;
-        margin: 1.2em 0;
+        // margin: 1.2em 0;
     }
 
     }
