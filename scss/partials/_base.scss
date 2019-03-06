@@ -183,6 +183,11 @@ body {
     background-color: $greensheen;
 }
 
+.skills-grid {
+    display: grid;
+    margin: 0 auto;
+}
+
 .skills-grid .skill {
     position: relative;
     height: calc(300px - 30px);
@@ -308,9 +313,6 @@ body {
         .card-body {
             text-align: left;
             padding: 2em;
-            p {
-                // line-height: 1.6em;
-            }
             grid-area: body;
             ul {
                 list-style-type: circle;

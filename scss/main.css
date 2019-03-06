@@ -232,6 +232,12 @@ body h1 {
   background-color: #64B6AC;
 }
 
+.skills-grid {
+  display: -ms-grid;
+  display: grid;
+  margin: 0 auto;
+}
+
 .skills-grid .skill {
   position: relative;
   height: calc(300px - 30px);
@@ -500,8 +506,6 @@ body h1 {
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
   .skills-grid {
-    display: -ms-grid;
-    display: grid;
     grid-template: "fig1 fig2 fig3" "fig4 fig5 fig6";
   }
   .skills-grid .html {
@@ -534,10 +538,20 @@ body h1 {
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
   .skills-grid {
-    margin: 0 auto;
-    display: -ms-grid;
-    display: grid;
     grid-template: "fig1 fig2" "fig3 fig4" "fig5 fig6";
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 700px) {
+  .wave-img,
+  .rotate-img {
+    display: none !important;
+  }
+  .skills-grid {
+    grid-template: "fig1" "fig2" "fig3" "fig4" "fig5" "fig6";
+  }
+  .education-grid {
+        grid-template-areas: "card1"  "card2";
   }
 }
 

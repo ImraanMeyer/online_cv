@@ -3,8 +3,6 @@
   and (max-device-width: 1600px) {
 
     .skills-grid {
-
-        display: grid;
         grid-template: 
             "fig1 fig2 fig3"
             "fig4 fig5 fig6";
@@ -35,11 +33,35 @@
   and (max-device-width: 1024px) {
 
     .skills-grid {
-        margin: 0 auto;
-        display: grid;
         grid-template: 
             "fig1 fig2"
             "fig3 fig4"
             "fig5 fig6";
   }
 }
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 700px) {
+    
+    .wave-img,
+    .rotate-img {
+        display: none !important;
+    }
+    
+    .skills-grid {
+        grid-template: 
+            "fig1"
+            "fig2"
+            "fig3"
+            "fig4"
+            "fig5"
+            "fig6"       
+    }
+    .education-grid {
+        grid-template-areas: 
+            "card1" 
+            "card2";
+    }
+}
+
