@@ -16,9 +16,16 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Roboto Slab' !important;
   color: #424C55;
+}
+
+h1 {
+  color: #424C55 !important;
 }
 
 body {
@@ -38,6 +45,7 @@ body h1 {
 
 .portfolio,
 .skills-container,
+.education-container,
 .work-xp {
   min-height: 100vh;
   width: 100%;
@@ -74,7 +82,7 @@ body h1 {
 .rotate-img {
   position: absolute;
   width: 100%;
-  height: 120px;
+  height: 110px;
 }
 
 .splash-text {
@@ -119,9 +127,43 @@ body h1 {
   display: grid;
   -ms-grid-columns: (50%)[2];
       grid-template-columns: repeat(2, 50%);
-  -ms-grid-rows: (auto)[3];
-      grid-template-rows: repeat(3, auto);
-      grid-template-areas: "hi hi" "text text" "btn1 btn2";
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "hi hi" "text text" "personal personal" "btn1 btn2";
+}
+
+.right .personal {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: personal;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "email"  "phone";
+}
+
+.right .personal .text {
+  text-align: center;
+  line-height: 1.6em;
+  color: #ccc;
+  width: 100%;
+}
+
+.right .personal .text:hover {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.right .personal .phone {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: phone;
+}
+
+.right .personal .email {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: email;
 }
 
 .right:hover {
@@ -144,16 +186,21 @@ body h1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: text;
+  margin: 0;
+}
+
+.btns {
+  margin: 1em 0 0;
 }
 
 .btn1 {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: btn1;
 }
 
 .btn2 {
-  -ms-grid-row: 3;
+  -ms-grid-row: 4;
   -ms-grid-column: 2;
   grid-area: btn2;
 }
@@ -262,6 +309,7 @@ body h1 {
 .skills-grid .skill .skill-content h3 {
   padding: 0;
   font-size: 3em;
+  color: #FCF7F8;
 }
 
 .html {
@@ -272,6 +320,125 @@ body h1 {
 .html:hover {
   -webkit-animation: 0;
           animation: 0;
+}
+
+.education-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 1em;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-areas: "card1 card2";
+}
+
+.education-grid .edu-card {
+  max-height: 100vh;
+  background: #C1CAD6;
+  border-radius: .3em;
+  text-align: center;
+  padding: 1em;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "title" "time" "body";
+}
+
+.education-grid .edu-card .section-header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+  margin: 2em 0;
+  font-weight: 600;
+}
+
+.education-grid .edu-card .card-title {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: title;
+  margin: 0;
+  color: #FCF7F8;
+}
+
+.education-grid .edu-card .timezone::after {
+  content: '';
+  display: block;
+  width: 50%;
+  margin: .8em auto;
+  height: 4px;
+  background: #FCF7F8;
+}
+
+.education-grid .edu-card .timezone {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: time;
+  color: #424C55;
+}
+
+.education-grid .edu-card .card-body {
+  text-align: left;
+  padding: 2em;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: body;
+}
+
+.education-grid .edu-card .card-body p {
+  line-height: 1.6em;
+}
+
+.education-grid .edu-card .card-body ul {
+  list-style-type: circle;
+}
+
+.education-grid .edu-card .card-body ul li {
+  margin: 2em;
+}
+
+.education-grid .edu-card:hover {
+  -webkit-animation: pulse .4s;
+          animation: pulse .4s;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.education-grid .card1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: card1;
+}
+
+.education-grid .card2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: card2;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[2] "sec1" "sec2";
+      grid-template-rows: repeat(2, 1fr) "sec1" "sec2";
+}
+
+.education-grid .card2 .sectionOne {
+  grid-area: sec1;
+}
+
+.education-grid .card2 .sectionTwo {
+  grid-area: sec2;
+  margin: 1.2em 0;
+}
+
+.inner-border {
+  border: 2px solid #424C55;
+  position: relative;
+  padding: 1em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#capital {
+  text-transform: capitalize;
 }
 
 .navbar {
@@ -789,6 +956,8 @@ body h1 {
 }
 
 .content .title-overlay {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
   grid-area: title;
   font-size: 1.4em;
 }
@@ -831,13 +1000,13 @@ body h1 {
 }
 
 .footer {
-  height: 38vh;
+  height: 28vh;
   background-color: #7798AB;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto 10vh 10vh 5vh;
-      grid-template-rows: auto 10vh 10vh 5vh;
-      grid-template-areas: "img"  "icons" "personal" "copywrite";
+  -ms-grid-rows: auto 10vh 5vh;
+      grid-template-rows: auto 10vh 5vh;
+      grid-template-areas: "img"  "icons" "copywrite";
 }
 
 .footer .rotate-img {
@@ -861,7 +1030,7 @@ body h1 {
   display: -ms-grid;
   display: grid;
   grid-gap: 1em;
-      grid-template-areas: "icon1 icon2 icon3";
+      grid-template-areas: "icon1 icon2 icon3 icon4";
 }
 
 .footer .icons ul .social {
@@ -899,6 +1068,12 @@ body h1 {
   grid-area: icon3;
 }
 
+.footer .icons ul .social4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: icon4;
+}
+
 .footer .icons ul a:hover {
   -webkit-animation: jello .7s;
           animation: jello .7s;
@@ -908,62 +1083,24 @@ body h1 {
   transition: all .3s;
 }
 
-.footer .icons ul .facebook:hover {
-  color: #3b5998;
+.footer .icons ul .github:hover {
+  color: #6e5494;
 }
 
-.footer .icons ul .instagram:hover {
-  color: #e4405f;
+.footer .icons ul .slack:hover {
+  color: #3aaf85;
 }
 
 .footer .icons ul .twitter:hover {
   color: #55acee;
 }
 
-.footer .personal {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: personal;
-  display: -ms-grid;
-  display: grid;
-  margin: 0 auto;
-      grid-template-areas: "email phone";
-}
-
-.footer .personal .text {
-  display: -ms-grid;
-  display: grid;
-  place-content: center;
-  background-color: #FCF7F8;
-  color: #424C55;
-  padding: 10px;
-  margin: 0 0.6em;
-  border-radius: 1.6em;
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-.footer .personal .text:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: all .4s;
-  transition: all .4s;
-}
-
-.footer .personal .phone {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: phone;
-}
-
-.footer .personal .email {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: email;
+.footer .icons ul .linked:hover {
+  color: #0077B5;
 }
 
 .footer .copywrite {
-  -ms-grid-row: 4;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: copywrite;
   font-size: .6em;

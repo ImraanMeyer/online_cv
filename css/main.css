@@ -11,9 +11,15 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Roboto Slab' !important;
   color: #424C55; }
+
+h1 {
+  color: #424C55 !important; }
 
 body {
   margin: 0;
@@ -205,7 +211,8 @@ body {
 
 .skills-grid .skill .skill-content h3 {
   padding: 0;
-  font-size: 3em; }
+  font-size: 3em;
+  color: #FCF7F8; }
 
 .html {
   animation: jello 1.6s infinite; }
@@ -216,33 +223,68 @@ body {
 .education-grid {
   display: grid;
   grid-gap: 1em;
-  grid-template-areas: "card1 card2" "card3 card4"; }
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "card1 card2"; }
   .education-grid .edu-card {
-    background: #7798AB;
-    border-radius: 1em;
+    max-height: 100vh;
+    background: #C1CAD6;
+    border-radius: .3em;
     text-align: center;
     padding: 1em;
+    transition: all .4s;
     display: grid;
-    grid-template-areas: "title" "time" "body"; }
+    grid-template-areas: "header" "title" "time" "body"; }
+    .education-grid .edu-card .section-header {
+      grid-area: header;
+      margin: 2em 0;
+      font-weight: 600; }
     .education-grid .edu-card .card-title {
       grid-area: title;
       margin: 0;
-      padding: 1em; }
+      color: #FCF7F8; }
+    .education-grid .edu-card .timezone::after {
+      content: '';
+      display: block;
+      width: 50%;
+      margin: .8em auto;
+      height: 4px;
+      background: #FCF7F8; }
     .education-grid .edu-card .timezone {
-      padding: .6em;
       grid-area: time;
-      color: #ccc; }
+      color: #424C55; }
     .education-grid .edu-card .card-body {
+      text-align: left;
       padding: 2em;
       grid-area: body; }
+      .education-grid .edu-card .card-body p {
+        line-height: 1.6em; }
+      .education-grid .edu-card .card-body ul {
+        list-style-type: circle; }
+        .education-grid .edu-card .card-body ul li {
+          margin: 2em; }
+  .education-grid .edu-card:hover {
+    animation: pulse .4s;
+    transition: all .4s; }
   .education-grid .card1 {
     grid-area: card1; }
   .education-grid .card2 {
-    grid-area: card2; }
-  .education-grid .card3 {
-    grid-area: card3; }
-  .education-grid .card4 {
-    grid-area: card4; }
+    grid-area: card2;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr) "sec1" "sec2"; }
+    .education-grid .card2 .sectionOne {
+      grid-area: sec1; }
+    .education-grid .card2 .sectionTwo {
+      grid-area: sec2;
+      margin: 1.2em 0; }
+
+.inner-border {
+  border: 2px solid #424C55;
+  position: relative;
+  padding: 1em;
+  height: fit-content; }
+
+#capital {
+  text-transform: capitalize; }
 
 .navbar {
   top: 0;

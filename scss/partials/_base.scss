@@ -14,11 +14,17 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Roboto Slab' !important;
-    color: $outerspace ;
+    color: $outerspace;
 }
 
+h1 {
+    color: $outerspace !important;
+}
 
 body {
     margin: 0;
@@ -247,6 +253,7 @@ body {
 .skills-grid .skill .skill-content h3 {
     padding: 0;
     font-size: 3em;
+    color: $snow;
 }
 
 .html{
@@ -259,36 +266,62 @@ body {
 .education-grid {
     display: grid;
     grid-gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
-        "card1 card2"
-        "card3 card4";
+        "card1 card2";
+    
 
     .edu-card {
-        background: $weldonblue;
-        border-radius: 1em;
+        max-height: 100vh;
+        background: $lavengrey;
+        border-radius: .3em;
         text-align: center;
         padding: 1em;
+        transition: all .4s;
         display: grid;
         grid-template-areas: 
+            "header"
             "title"
             "time"
             "body";
-    
+        
+        .section-header {
+            grid-area: header;
+            margin: 2em 0;
+            font-weight: 600;
+        }
+        
         .card-title {
             grid-area: title;
             margin: 0;
-            padding: 1em;;
-            
+            color: $snow;
+        }
+        .timezone::after {
+            @include underline;
+            background: $snow;
         }
         .timezone {
-            padding: .6em;
             grid-area: time;
-            color: $greyed;
+            color: $outerspace;
         }
         .card-body {
+            text-align: left;
             padding: 2em;
+            p {
+                line-height: 1.6em;
+            }
             grid-area: body;
+            ul {
+                list-style-type: circle;
+                li {
+                    margin: 2em;
+                }
+            }
         }
+    }
+    .edu-card:hover {
+        animation: pulse .4s;
+        transition: all .4s;
     }
 
     .card1 {
@@ -296,12 +329,30 @@ body {
     }
     .card2 {
         grid-area: card2;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr)
+        "sec1"
+        "sec2";
+
+    .sectionOne {
+        grid-area: sec1;
+        // margin: 1em 0;
     }
-    .card3 {
-        grid-area: card3;
+    .sectionTwo {
+        grid-area: sec2;
+        margin: 1.2em 0;
     }
-    .card4 {
-        grid-area: card4;
+
     }
-        
+}
+
+.inner-border {
+    border: 2px solid $outerspace;
+    position: relative;
+    padding: 1em;
+    height: fit-content;
+}
+
+#capital {
+    text-transform: capitalize;
 }
