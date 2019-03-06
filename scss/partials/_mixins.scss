@@ -1,0 +1,7 @@
+@mixin underline {
+    content: '';
+    display: block;
+    width: 50%;
+    margin: .8em auto;
+    height: 4px;
+}

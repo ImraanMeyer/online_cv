@@ -1,0 +1,140 @@
+.timeline {
+    list-style: none;
+    padding: 20px 0 20px;
+    position: relative;
+  }
+  .timeline:before {
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    content: " ";
+    width: 3px;
+    background-color: $lavengrey;
+    left: 50%;
+    margin-left: -1.5px;
+  }
+  .timeline > li {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .timeline > li:before,
+  .timeline > li:after {
+    content: " ";
+    display: table;
+  }
+  .timeline > li:after {
+    clear: both;
+  }
+  .timeline > li:before,
+  .timeline > li:after {
+    content: " ";
+    display: table;
+  }
+  .timeline > li:after {
+    clear: both;
+  }
+.timeline-block {
+    width: 46%;
+    float: left;
+    border: 1px solid $turkishrose;
+    border-radius: 2em;
+    padding: 20px;
+    position: relative;
+    box-shadow: 0 1px 6px $greyed;
+}
+.timeline-block:hover {
+    animation: jello .9s;
+}
+
+
+.timeline-block:before {
+    position: absolute;
+    top: 26px;
+    right: -15px;
+    display: inline-block;
+    border-top: 15px solid transparent;
+    border-left: 15px solid $turkishrose;
+    border-right: 0 solid $turkishrose;
+    border-bottom: 15px solid transparent;
+    content: " ";
+}
+
+.timeline-block:after {
+    position: absolute;
+    top: 27px;
+    right: -14px;
+    display: inline-block;
+    border-top: 14px solid transparent;
+    border-left: 14px solid $turkishrose;
+    border-right: 0 solid $turkishrose;
+    border-bottom: 14px solid transparent;
+    content: " ";
+}
+
+.timeline-circle {
+    color: $snow;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 1.4em;
+    text-align: center;
+    position: absolute;
+    top: 16px;
+    left: 50%;
+    margin-left: -25px;
+    z-index: 100;
+    border-radius: 50%;
+    transition: .4s all;
+}
+
+.timeline-circle:hover {
+    transform: scale(1.2);
+    transition: .4s all;
+}
+
+.one {
+    background: $weldonblue;
+}
+.one:hover {
+    background: $outerspace;
+}
+.two {
+    background: $greensheen;
+}
+.two:hover {
+    background: $lavengrey;
+}
+
+.timeline > li.timeline-inverted > .timeline-block {
+    float: right;
+}
+.timeline > li.timeline-inverted > .timeline-block:before {
+    border-left-width: 0;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+.timeline > li.timeline-inverted > .timeline-block:after {
+    border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+
+
+.timeline-title {
+    margin-top: 0;
+    color: inherit;
+}
+.timeline-content > p,
+.timeline-content > ul {
+    margin-bottom: 0;
+}
+.timeline-content > p + p {
+    margin-top: 5px;
+}
+
+.grey {
+    color: #ccc;
+}
+

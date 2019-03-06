@@ -1,4 +1,9 @@
-@import 'partials/variables',
+@import 'partials/mixins',
+        'partials/variables',
         'partials/base',
         'partials/navbar',
-        'partials/components';
+        'partials/responsive',
+        'partials/animations',
+        'partials/timeline',
+        'partials/components',
+        'partials/footer';

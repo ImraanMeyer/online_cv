@@ -1,3 +1,25 @@
+@font-face {
+    font-family: 'thePoppins';
+    src: url(../fonts/Poppins.ttf);
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+p,
+a {
+    font-family: 'thePoppins', 'Century Gothic';
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Slab' !important;
+    color: $outerspace ;
+}
+
+
 body {
     margin: 0;
     padding: 0;
@@ -5,49 +27,281 @@ body {
         margin: 0;
     }
 }
- 
-section,
+
 .header {
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+.portfolio,
+.skills-container,
+.education-container,
+.work-xp {
     min-height: 100vh;
     width: 100%;
-}
+}   
 
 .header {
-    // padding: 6em;
     background-image:linear-gradient(#fff0, $weldonblue) , url(../images/bg3.jpg);
     background-size: cover;
-    background-blend-mode: hue;
+    background-blend-mode: saturation;
     background-position: bottom;
     background-repeat: no-repeat;
-    height: 100vh;
     position: relative;
     background-attachment: fixed;
+        h1 {
+            font-size: 6vw;
+            color: $outerspace
+        }
+        h2 {
+            font-size: 4vw;
+            color: $outerspace;
+        }
 }
-
-// .header:after {
-//     content: '';
-//     background: url(../../images/wave.png) no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//     position: absolute;
-//     bottom: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 220px;
-// }
 
 .wave-img {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 220px;
+    height: 180px;
+}
+.rotate-img {
+    position: absolute;
+    width: 100%;
+    height: 110px;
 }
 
 .splash-text {
-    padding: 100px ;
+    padding: 2em 100px 0;
+    
+    display: grid;
+    grid-template-columns:60% 40%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "left right";
+
+    .left {
+        grid-area: left;
+        z-index: 4;
+        font-family: 'Roboto Slab';
+    }
+    .right {
+        grid-area: right;
+        z-index: 4;
+    }
 }
 
-// img {
-//     height: auto;
-//     width: 100%;
-// }
+.right {
+    animation: pulse infinite;
+    animation-duration: 1.900s;
+    box-shadow: 2px 4px 3px lightgrey;
+    border-top: solid $turkishrose;
+    background-color: $snow;
+    border-radius: 0.45rem;
+    padding: 1em;
+    height: auto; 
+    
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: 
+        "hi hi"
+        "text text"
+        "personal personal"
+        "btn1 btn2";
+    .personal {
+        grid-area: personal;
+        display: grid;
+        grid-template-areas: 
+            "email" 
+            "phone";
+
+        .text {
+            text-align: center;
+            line-height: 1.6em;
+            color: $greyed;
+            width: 100%;
+        }
+        .text:hover {
+            transition: all .4s;
+        }
+        .phone {
+            grid-area: phone;
+        }
+        .email {
+            grid-area: email;
+        }
+    }
+}
+
+.right:hover {
+    animation: none;
+}
+
+#bolder {
+    color: $outerspace;
+    grid-area: hi;
+    font-weight: 600;
+    font-size: 1.6em;
+}
+.info {
+    grid-area: text;
+    margin: 0;
+}
+
+.btns {
+    margin: 1em 0 0;
+}
+
+.btn1 {
+    grid-area: btn1;
+}
+.btn2 {
+    grid-area: btn2;
+}
+
+.main-text {
+    padding: 2em;
+    margin: 0 auto;
+    h1 {
+        text-align: center;
+    }
+}
+
+.blue-underline::after {
+    @include underline; 
+    background-color: $weldonblue;
+}
+.green-underline::after {
+    @include underline;
+    background-color: $greensheen;
+}
+
+.skills-grid .skill {
+    position: relative;
+    height: calc(300px - 30px);
+    background: $outerspace;
+    float: left;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+} 
+
+.skills-grid .skill .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient($weldonblue , $greensheen);
+    transition: 0.5s ease-in all;
+    z-index: 1;
+    clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
+
+
+}
+
+.skills-grid .skill:hover .icon {
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    transition: .5s all;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+}
+
+.skills-grid .skill .icon .fab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 8em;
+    transition: .5s;
+    color: $snow;
+}
+
+.skills-grid .skill:hover .icon .fab {
+    font-size: 3em;
+}
+
+.skill-content {
+    position: absolute;
+    top: 100px;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 2em;
+    box-sizing: border-box;
+    transition: .5s;
+    color: $snow;
+    opacity: 0;
+    width: 100%;
+}
+
+.skills-grid .skill:hover .skill-content {
+    top: 100px;
+    opacity: 1;
+}
+
+.skills-grid .skill .skill-content h3 {
+    padding: 0;
+    font-size: 3em;
+}
+
+.html{
+    animation: jello 1.6s infinite;
+}
+.html:hover {
+    animation: 0;
+}
+
+.education-grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-areas: 
+        "card1 card2"
+        "card3 card4";
+
+    .edu-card {
+        background: $weldonblue;
+        border-radius: 1em;
+        text-align: center;
+        padding: 1em;
+        display: grid;
+        grid-template-areas: 
+            "title"
+            "time"
+            "body";
+    
+        .card-title {
+            grid-area: title;
+            margin: 0;
+            padding: 1em;;
+            
+        }
+        .timezone {
+            padding: .6em;
+            grid-area: time;
+            color: $greyed;
+        }
+        .card-body {
+            padding: 2em;
+            grid-area: body;
+        }
+    }
+
+    .card1 {
+        grid-area: card1;
+    }
+    .card2 {
+        grid-area: card2;
+    }
+    .card3 {
+        grid-area: card3;
+    }
+    .card4 {
+        grid-area: card4;
+    }
+        
+}

@@ -1,0 +1,45 @@
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) {
+
+    .skills-grid {
+
+        display: grid;
+        grid-template: 
+            "fig1 fig2 fig3"
+            "fig4 fig5 fig6";
+        
+        .html {
+            grid-area: fig1;
+        }
+        .css {
+            grid-area: fig2;
+        }
+        .js {
+            grid-area: fig3;
+        }
+        .sass {
+            grid-area: fig4;
+        }
+        .node {
+            grid-area: fig5;
+        }
+        .github {
+            grid-area: fig6;
+        }   
+    }
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) {
+
+    .skills-grid {
+        margin: 0 auto;
+        display: grid;
+        grid-template: 
+            "fig1 fig2"
+            "fig3 fig4"
+            "fig5 fig6";
+  }
+}

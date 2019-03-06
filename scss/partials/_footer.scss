@@ -1,0 +1,111 @@
+.footer {
+    height: 28vh;
+    background-color: $weldonblue;
+
+
+    display: grid;
+    grid-template-rows: auto 10vh 5vh;
+    grid-template-areas:
+        "img" 
+        "icons"
+        "copywrite";
+
+    .rotate-img {
+        grid-area: img;
+    }
+    .icons {
+        display: grid;
+        place-content: center;
+        grid-area: icons;
+        z-index: 2;
+        ul {
+            padding: 0;
+            display: grid;
+            grid-gap: 1em;
+            
+            grid-template-areas: 
+                "icon1 icon2 icon3 icon4";
+
+            .social {
+                list-style: none;    
+
+                a {
+                    text-decoration: none;
+                    color: $outerspace;
+                    font-size: 2em;
+
+                    width: 50px;
+                    height: 50px;
+                    display: grid;
+                    place-content: center;
+                    transition: .3s all;
+                }
+            }
+
+            .social1 {
+                grid-area: icon1;
+            }
+            .social2 {
+                grid-area: icon2;
+            }
+            .social3 {
+                grid-area: icon3;
+            }
+            .social4 {
+                grid-area: icon4;
+            }
+
+
+            a:hover {
+                animation: jello .7s;
+                background: $snow;
+                border-radius: 50%;
+                transition: all .3s
+            }
+
+            .github:hover {
+                color: #6e5494;
+            }
+            .slack:hover {
+                color: #3aaf85;
+            }
+            .twitter:hover {
+                color: #55acee;
+            }
+            .linked:hover {
+                color: #0077B5;
+            }
+        }
+    }
+
+    .copywrite {
+        grid-area: copywrite;
+        font-size: .6em;
+        text-align: center;
+    }
+
+        
+    .up {
+        position: fixed;
+        left: 90%;
+        bottom: 20px;
+        z-index: 6;
+        height: 40px;
+        width: 40px;
+        background: $outerspace;
+        border-radius: 50%;
+        display: grid;
+        place-content: center;
+        color: $snow;
+        text-decoration: none;
+        transition: .4s all;
+        opacity: .4 ;
+    }
+    .up:hover {
+        opacity: 1 ;
+        transition: .4s all;
+        transform: scale(1.4);
+        background: linear-gradient($greensheen , $weldonblue);
+    }
+}
+

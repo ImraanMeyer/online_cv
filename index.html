@@ -5,38 +5,345 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Roboto+Slab" rel="stylesheet">
 
     <title>Imraan Meyer | Junior Web Developer</title>
+    <link rel="icon" type="image/ico" href="images/logo(crop).png" />
+ 
 </head>
 <body>
     <header class="header">
-        <nav class="navbar">
+        <nav class="navbar" id="nav">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About Me</a></li>
-                <li><a href="">Portfolio</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Work Experience</a></li>
-                <li><a href="">Contact Me</a></li>
+                <li><a href="index.html"    class="link">Home</a></li>
+                <li><a href="#portfolio"    class="link">Portfolio</a></li>
+                <li><a href="#skills"       class="link">Skills</a></li>
+                <li><a href="#education"    class="link">Education</a></li>
+                <li><a href="#experience"   class="link">Work Experience</a></li>
             </ul>
         </nav>
             
         <section class="splash-text">
-            <h1>Imraan Meyer</h1>
-            <h2>Junior Web Developer</h2>
+            <section class="left">
+                    <h1>Imraan Meyer</h1>
+                    <h2>Junior Web Developer</h2> 
+            </section>
+            
+            <section class="right">
+                <h3 id="bolder">Hi!</h3>
+                <p class="info">I am an aspiring web developer, I enjoy UI/UX as well learning new things and improving on my skills!</p>
+                <section class="personal">
+                    <sec class="text email">
+                            imraan.meyer97@gmail.com
+                    </sec>
     
-            <br>
-    
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque consectetur fuga expedita saepe, magni esse nam sint quidem deleniti et impedit, voluptatibus inventore illum cumque, dolorum officiis? Nihil, nostrum dignissimos!</p>    
+                    <sec class="text phone">
+                        +27 785851287
+                    </sec>
+                </section>
+                <a class="btns btn1" href="#">Download CV</a>
+                <a class="btns btn2" href="#footer">Contact</a>
+            </section>
         </section>
-        
-    <img class="wave-img" src="images/wave.png" alt="" srcset="">
-        
+
+        <img class="wave-img" src="images/wave.png" alt="" srcset="">
     </header>
 
-    <section>
+    <section class="portfolio" id="portfolio">
+        <section class="main-text">
+            <h1 class="blue-underline">Portfolio</h1>
 
+            <section class="port-grid">
+                
+                <div class="figure figure-1">
+                    <img class="con-img" src="images/project1.png" alt="Avatar" class="image">
+                    
+                    <div class="overlay">
+                        <div class="content">
+                            <h3 class="title-overlay">Outdoor Adventures</h3>
+
+                            <p class="description">
+                                    A website containing outdoor adventures!
+                            </p>
+                            <a class="visit-project" target="blank" href="https://imraanmeyer.github.io/outdoor-adventures">Check it out!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="figure figure-2">
+                    <img class="con-img" src="images/mason.png" alt="Avatar" class="image">
+                    
+                    <div class="overlay">
+                        <div class="content">
+                            <h3 class="title-overlay">Masonry Gallery</h3>
+
+                            <p class="description">
+                                    A masonry album using pictures of my fellow classmates. 
+                            </p>
+                            <a class="visit-project" target="blank" href="https://imraanmeyer.github.io/outdoor-adventures">Check it out!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="figure figure-3">
+                    <img class="con-img img3" src="images/comingsoon.png" alt="Avatar" class="image">
+                    
+                    <div class="overlay">
+                        <div class="content">
+                            <h3 class="title-overlay">Coming Soon</h3>
+
+                            <p class="description">
+                                Project in development!
+                            </p>
+                            <a class="visit-project" target="blank" href="#">Check it out!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="figure figure-4">
+                    <img class="con-img img3" src="images/comingsoon.png" alt="Avatar" class="image">
+                    
+                    <div class="overlay">
+                        <div class="content">
+                            <h3 class="title-overlay">Coming Soon</h3>
+
+                            <p class="description">
+                                Project in development!
+                            </p>
+                            <a class="visit-project" target="blank" href="#">Check it out!</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
     </section>
+    <!-- portfolio section ends -->
+
+    <!-- skills section starts -->
+    <section class="skills-container" id="skills">
+        <section class="main-text">
+            <h1 class="green-underline">Skills</h1>
+
+            <div class="skills-grid">
+                <sec class="skill html" id="html">
+                    
+                    <div class="icon"><i class="fab fa-html5"></i></div>
+                    <div class="skill-content">
+                        <h3>HTML</h3>
+                    </div>
+                </sec>
+
+                <sec class="skill css">
+                    <div class="icon"><i class="fab fa-css3-alt"></i></div>
+                    <div class="skill-content">
+                        <h3>CSS</h3>
+                    </div>
+                </sec>
+
+                <sec class="skill js">
+                    <div class="icon"><i class="fab fa-js-square"></i></div>
+                    <div class="skill-content">
+                        <h3>JavaScript</h3>
+                    </div>
+                </sec>
+
+                <sec class="skill sass">
+                    <div class="icon"><i class="fab fa-sass"></i></div>
+                    <div class="skill-content">
+                        <h3>SASS</h3>
+                    </div>
+                </sec>
+
+                <sec class="skill node">
+                    <div class="icon"><i class="fab fa-node"></i></div>
+                    <div class="skill-content">
+                        <h3>Node.js</h3>
+                    </div>
+                </sec>
+
+                <sec class="skill github">
+                    <div class="icon"><i class="fab fa-github-alt"></i></div>
+                    <div class="skill-content">
+                        <h3>Github</h3>
+                    </div>  
+                </sec>
+
+            </div>
+        </section>
+    </section>
+    <!-- skills section ends -->
+
+    <!-- education contact starts -->
+    <section class="education-container" id="education">
+        <section class="main-text">
+            <h1 class="blue-underline">Education</h1>
+
+            <article class="education-grid">
+                
+                <section class="edu-card card1">
+                    
+                    <h3 class="card-title">Islamia College</h3>
+                
+                    <sec class="timezone">
+                        <!-- greyed -->
+                        2015 (Matric)
+                        <!-- right border -->
+                    </sec>
+
+                    <sec class="card-body">
+                        <!-- text about the place -->
+                        <p>Ive spent my entire high school career at Islamia</p>
+                    </sec>
+
+                </section>
+            
+                <section class="edu-card card2">
+                    
+                    <h3 class="card-title">Islamia College</h3>
+                
+                    <sec class="timezone">
+                        <!-- greyed -->
+                        2015 (Matric)
+                        <!-- right border -->
+                    </sec>
+
+                    <sec class="card-body">
+                        <!-- text about the place -->
+                        <p>Ive spent my entire high school career at Islamia</p>
+                    </sec>
+
+                </section>
+
+                <section class="edu-card card3">
+                    
+                    <h3 class="card-title">Islamia College</h3>
+                
+                    <sec class="timezone">
+                        <!-- greyed -->
+                        2015 (Matric)
+                        <!-- right border -->
+                    </sec>
+
+                    <sec class="card-body">
+                        <!-- text about the place -->
+                        <p>Ive spent my entire high school career at Islamia</p>
+                    </sec>
+
+                </section>
+
+                <section class="edu-card card4">
+                    
+                    <h3 class="card-title">Islamia College</h3>
+                
+                    <sec class="timezone">
+                        <!-- greyed -->
+                        2015 (Matric)
+                        <!-- right border -->
+                    </sec>
+
+                    <sec class="card-body">
+                        <!-- text about the place -->
+                        <p>Ive spent my entire high school career at Islamia</p>
+                    </sec>
+
+                </section>
+            </article>
+            
+        </section>
+    </section>
+    <!-- education secion ends -->
+
+    <!-- work experience section starts -->
+    <section class="work-xp" id="experience">
+        <section class="main-text">
+            <h1 class="green-underline">Work Experience</h1>
+
+            <div class="container">
+                <ul class="timeline">
+                    <li>
+                        <!-- circle in center of timeline -->
+                        <div class="timeline-circle one">2</div>
+
+
+                        <div class="timeline-block">
+                            <div class="timeline-heading">
+                                <h2 class="timeline-title">SoundTech</h2>
+                                <p class="grey">2017 - 2018</p>
+                            </div>
+
+                            <div class="timeline-content">
+                                <p>Knowing what was trending in the tech industry was part of my job and also became one of my biggest intrest.</p>
+                                <p>Some</p>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="timeline-inverted">
+
+                        <div class="timeline-circle two">1</div>
+
+                        <div class="timeline-block">
+                            
+                            <div class="timeline-heading">
+                                <h2 class="timeline-title">Soviet</h2>
+                                <p class="grey">2015 (3 Months)</p>
+                            </div>
+
+                            <div class="timeline-content">
+                                <p>Working in Soviet was a necessary, as I need the experience to enter a work enviroment.</p>
+                            </div>
+                            
+                        </div>
+                    </li>
+                </ul>
+            </div>    
+        </section>
+    </section>
+    <!-- work xp section ends -->
+
+    <!-- footer starts here -->
+    <footer class="footer" id="footer">
+        <img class="rotate-img" src="images/rotate.png" alt="" srcset="">
+
+        <section class="icons">
+            <ul>
+                <li class="social social1">
+                    <a href="https://github.com/ImraanMeyer" target="blank" class="github"> 
+                        <i class="fab fa-github-alt"></i>
+                    </a>
+                </li>
+                
+                <li class="social social2">
+                    <a href="https://slack.com/" target="blank" class="slack">
+                        <i class="fab fa-slack"></i>
+                    </a>
+                </li>
+
+                <li class="social social3">
+                    <a href="https://twitter.com/iamimraaan_?lang=en" target="blank" class="twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+
+                <li class="social social4">
+                    <a href="https://www.linkedin.com/in/imraan-meyer-536476175/" target="blank" class="linked">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="copywrite">
+            <p id="bottom">© Designed by Imraan Meyer | Junior Web Developer</p>
+        </section>
+
+        
+        <a class="up" href="#nav">
+            ↑
+        </a>
+    </footer>
+    <!-- footer ends here -->
 </body>
 </html>
