@@ -52,8 +52,8 @@ body h1 {
 }
 
 .header {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff0), to(#7798AB)), url(../images/bg3.jpg);
-  background-image: linear-gradient(#fff0, #7798AB), url(../images/bg3.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#7798AB)), url(../images/bg3.jpg);
+  background-image: linear-gradient(#fff, #7798AB), url(../images/bg3.jpg);
   background-size: cover;
   background-blend-mode: saturation;
   background-position: bottom;
@@ -435,9 +435,7 @@ body h1 {
   border: 2px solid #424C55;
   position: relative;
   padding: 1em;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  height: 100vh;
 }
 
 #capital {
@@ -505,6 +503,10 @@ body h1 {
 }
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+  .float-nav,
+  .main-nav {
+    display: none;
+  }
   .skills-grid {
     grid-template: "fig1 fig2 fig3" "fig4 fig5 fig6";
   }
@@ -537,6 +539,22 @@ body h1 {
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .wave-img,
+  .rotate-img {
+    display: none;
+  }
+  .header {
+    min-height: 120vh;
+  }
+  .splash-text {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 2em;
+    -ms-grid-rows: 20vh 50vh;
+        grid-template-rows: 20vh 50vh;
+    margin: 0 auto;
+        grid-template-areas: "left"  "right";
+  }
   .skills-grid {
     grid-template: "fig1 fig2" "fig3 fig4" "fig5 fig6";
   }

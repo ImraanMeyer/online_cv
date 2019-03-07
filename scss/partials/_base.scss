@@ -48,7 +48,7 @@ body {
 }   
 
 .header {
-    background-image:linear-gradient(#fff0, $weldonblue) , url(../images/bg3.jpg);
+    background-image:linear-gradient(#fff, $weldonblue) , url(../images/bg3.jpg);
     background-size: cover;
     background-blend-mode: saturation;
     background-position: bottom;
@@ -339,11 +339,9 @@ body {
 
     .sectionOne {
         grid-area: sec1;
-        // margin: 1em 0;
     }
     .sectionTwo {
         grid-area: sec2;
-        // margin: 1.2em 0;
     }
 
     }
@@ -353,7 +351,8 @@ body {
     border: 2px solid $outerspace;
     position: relative;
     padding: 1em;
-    height: fit-content;
+    height: 100vh;
+
 }
 
 #capital {

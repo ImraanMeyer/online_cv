@@ -2,6 +2,10 @@
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) {
 
+    .float-nav,
+    .main-nav {
+        display: none;
+    }
     .skills-grid {
         grid-template: 
             "fig1 fig2 fig3"
@@ -32,12 +36,31 @@
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) {
 
+    .wave-img,
+    .rotate-img {
+        display: none;
+    }
+
+    .header {
+        min-height: 120vh;
+    }
+    .splash-text {
+        grid-template-columns: 1fr;
+        grid-gap: 2em;
+        grid-template-rows: 20vh 50vh;
+        margin: 0 auto;
+
+        // width: 100%;
+        grid-template-areas: 
+            "left" 
+            "right";
+    }
     .skills-grid {
         grid-template: 
             "fig1 fig2"
             "fig3 fig4"
             "fig5 fig6";
-  }
+    }
 }
 
 @media only screen 
