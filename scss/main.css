@@ -645,6 +645,40 @@ body h1 {
     margin: 0 auto;
         grid-template-areas: "left"  "right";
   }
+  .port-grid {
+    margin: 0 auto;
+        grid-template-areas: "fig1" "fig2" "fig3" "fig4" !important;
+  }
+  .port-grid .figure-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: fig1;
+  }
+  .port-grid .figure-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: fig2;
+  }
+  .port-grid .figure-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: fig3;
+  }
+  .port-grid .figure-4 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: fig4;
+  }
+  .education-grid {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 1em;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (auto)[2];
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "card1"  "card2" !important;
+  }
   .skills-grid {
     grid-template: "fig1" "fig2" "fig3" "fig4" "fig5" "fig6";
   }
