@@ -4,32 +4,38 @@
 ## Setting up your workspace
 
 - Created repository and cloned to desktop
+- Live link created
 - Folder Structure Created:
+- Downloaded fonts in order to work in an offline enviroment
 
 ```
---- Open Gitbash/Terminal in desired repository ---
-
-    - mkdir css scss images
+    - mkdir css scss images fonts
     - touch index.html
+```
+- Created scss files and partials using touch through gitbash terminal
 
 ```
+    - touch main.scss
+    - mkdir partials
+    - touch _variables.scss
+```
+- Used the following command line to write my scss to my css:
+
+```
+    - sass --watch scss:css
+```
+
+- Linked main.css to index.html
+
+
 ## Live Link
 
-```
 
 https://imraanmeyer.github.io/online_cv_v2/index.html
 
-```
-
-## Prevalent Technologies Used
-
- - HTML
- - CSS
- - SASS
- - Adobe Photoshop
 
 
-### Other Technologies Used
+### Technologies Used
 
 Technologies and Tools Used:
 
@@ -37,6 +43,8 @@ Technologies and Tools Used:
 Languages:
 
 - HTML
+- CSS 
+- SASS
 
 ```
 
@@ -52,7 +60,36 @@ Tools:
 
 ### Changelog
 
- 
+```
+02-03-2019
+    - Completed setting up workspace
+    - 'wave' images created through photoshop
+    - Hero section created
+    - Navbar created
+
+```
+```
+04-03-2019
+    - All sections created as placeholders
+    - Styled:
+        Portfolio
+        Skills
+    - Responsive design done for skills
+```
+
+```
+05-03-2019
+    - Styled:
+        Education
+        Work XP
+        Footer
+```
+
+```
+07-03-2019
+
+    - Tablet responsive design implemented
+```
 
 ## Contributors
 
