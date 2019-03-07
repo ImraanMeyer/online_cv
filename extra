@@ -1,0 +1,28 @@
+<section class="edu-card card2 inner-border">
+                        <h2 class="section-header secondary">Secondary Education</h2>
+
+                        <div class="sectionOne">
+                            <h3 class="card-title">Islamia College</h3>
+                
+                            <sec class="timezone">
+                                2015 (Matric)
+                            </sec>
+        
+                            <sec class="card-body">
+                                <p>I spent my entire schooling career at Islamia Boys College.</p>
+                                <p>I achieved most improved award for CAT after discovering that I have a passion for all things technology related.</p>
+                            </sec>
+                        </div>
+
+                        <div class="sectionTwo">
+                            <h3 class="card-title">Darun Naim</h3>
+                
+                            <sec class="timezone">
+                                2016 (1 year)
+                            </sec>
+        
+                            <sec class="card-body">
+                                <p>Spent 1 year learning and understanding the meaning of the Holy Quraan</p>
+                            </sec>
+                        </div>
+                </section>

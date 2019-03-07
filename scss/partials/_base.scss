@@ -277,8 +277,9 @@ body {
         "card1 card2";
     
 
-    .edu-card {
-        max-height: 110vh;
+    .edu-card,
+    .section {
+        min-height: fit-content;
         background: $lavengrey;
         border-radius: .3em;
         text-align: center;
@@ -314,13 +315,8 @@ body {
             text-align: left;
             padding: 2em;
             grid-area: body;
-            ul {
-                list-style-type: circle;
-                li {
-                    margin: 2em;
-                }
-            }
         }
+        
     }
     .edu-card:hover {
         animation: pulse .4s;
@@ -329,18 +325,28 @@ body {
 
     .card1 {
         grid-area: card1;
+        ul {
+            list-style-type: circle;
+            li {
+                margin: 2em;
+            }
+        }
     }
     .card2 {
         grid-area: card2;
         display: grid;
-        grid-template-rows: repeat(2, 1fr)
+        grid-template-areas: 
+        "title"
         "sec1"
         "sec2";
 
-    .sectionOne {
+    .secondary {
+        grid-area: title;
+    }
+    .part1 {
         grid-area: sec1;
     }
-    .sectionTwo {
+    .part2 {
         grid-area: sec2;
     }
 
@@ -348,11 +354,8 @@ body {
 }
 
 .inner-border {
-    border: 2px solid $outerspace;
-    position: relative;
-    padding: 1em;
-    height: 100vh;
-
+    outline: 2px solid $outerspace;
+    outline-offset: -1em;
 }
 
 #capital {

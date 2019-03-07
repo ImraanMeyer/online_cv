@@ -34,7 +34,7 @@
 
 .port-grid {
     display: grid;
-    grid-template-columns: repeat(2, 46vw);
+    grid-template-columns: repeat(2, auto);
     margin: 0 auto;
     grid-gap: 2em;
     grid-template-rows: repeat(2, 50%);
