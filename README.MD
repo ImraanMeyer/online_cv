@@ -95,6 +95,7 @@ Tools:
 
     - Mobile responsive design implemented
     - 'to top' icon adjusted 
+    - final commit 
 ```
 ## Contributors
 
