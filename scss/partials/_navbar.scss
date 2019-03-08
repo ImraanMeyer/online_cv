@@ -1,3 +1,8 @@
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+    and (min-device-width: 768px) 
+    and (max-device-width: 1024px) {
 .navbar {
     top: 0;
     width: 100%;
@@ -47,3 +52,66 @@
     left: 0;
     width: 100%;
 }
+    
+}
+
+@media only screen 
+    and (min-device-width: 320px)
+    and (max-device-width: 600px)
+    and (-webkit-min-device-pixel-ratio: 2) {
+    
+    .navbar {
+        width: 0;
+        position: fixed !important;
+        z-index: 99;
+        height: auto;
+        top: 0;
+        left: 0;
+        background-color: $outerspace;
+        overflow-x: hidden;
+        transition: all 0.4s;
+        padding: 0 !important;
+
+        ul {
+            padding: 0;
+            overflow-x: hidden;
+            li {
+                padding: 1em ;
+                list-style: none;
+            }
+        }
+
+        a {
+        text-decoration: none;
+        color: $snow;
+        transition: all 0.4s;
+        }
+        a:hover {
+            color: $turkishrose;
+            text-decoration: none;
+            transition: all .4s;
+        }
+        
+    }
+
+    .openbtn {
+        font-size: 20px;
+        cursor: pointer;
+        background-color: $outerspace;
+        color: $snow;
+        padding: 10px 15px;
+        opacity: .4;
+        border: none;
+    }
+    .openbtn:hover {
+        opacity: 1;
+    }
+
+    .closebtn {
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+      }
+      
+}   

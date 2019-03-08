@@ -130,16 +130,24 @@
     .splash-text {
         grid-template-columns: 1fr;
         grid-gap: 2em;
+        padding: 1em !important;
         grid-template-rows: 20vh 50vh;
         margin: 0 auto;
 
         grid-template-areas: 
             "left" 
             "right";
+        
+            .left {
+            text-align: center;
+        }
     }
 
     .port-grid {
         margin: 0 auto;
+        grid-gap: 1em 0 !important;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
         grid-template-areas: 
             "fig1"
             "fig2"
@@ -159,6 +167,17 @@
         .figure-4 {
             grid-area: fig4;
         }
+    
+        .figure {
+            width: 100%;
+            
+        }
+        .con-img {
+            object-fit: cover;
+        }
+        .visit-project {
+            padding: .6em;
+        }
     }
     
     .education-grid {
@@ -169,6 +188,12 @@
         grid-template-areas: 
             "card1" 
             "card2" !important;
+
+        .card1 {
+            ul {
+                padding: 0;
+            }
+        }
     }
     
     .skills-grid {
@@ -179,6 +204,23 @@
             "fig4"
             "fig5"
             "fig6"       
+    }
+
+    .timeline::before {
+        display: none;
+        content: '';
+    }
+
+    .timeline-block {
+        width: 80% !important;
+    }
+
+    .timeline-circle {
+        display: none;
+    }
+
+    .footer {
+        height: 20vh !important;
     }
     
 }

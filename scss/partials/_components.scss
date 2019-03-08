@@ -37,7 +37,7 @@
     grid-template-columns: repeat(2, auto);
     margin: 0 auto;
     grid-gap: 2em;
-    grid-template-rows: repeat(2, 50%);
+    grid-template-rows: repeat(2, auto);
     grid-template-areas: 
         "fig1 fig2" 
         "fig3 fig4";
@@ -91,7 +91,7 @@
 }
 
 .img3 {
-    object-fit: contain;
+    object-fit: contain !important;
     object-position: center;
 }
 

@@ -15,18 +15,20 @@
  
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="top">
 
-            
+        <button class="openbtn" onclick="openNav()">☰</button>
         <nav class="navbar" id="nav">
             <ul>
-                <li><a href="index.html"    class="link">Home</a></li>
-                <li><a href="#portfolio"    class="link">Portfolio</a></li>
-                <li><a href="#skills"       class="link">Skills</a></li>
-                <li><a href="#education"    class="link">Education</a></li>
-                <li><a href="#experience"   class="link">Work Experience</a></li>
+                <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a></li>
+                <li><a href="index.html"    class="link" onclick="closeNav()">Home</a></li>
+                <li><a href="#portfolio"    class="link" onclick="closeNav()">Portfolio</a></li>
+                <li><a href="#skills"       class="link" onclick="closeNav()">Skills</a></li>
+                <li><a href="#education"    class="link" onclick="closeNav()">Education</a></li>
+                <li><a href="#experience"   class="link" onclick="closeNav()">Work Experience</a></li>
             </ul>
         </nav>
+
             
         <section class="splash-text">
             <section class="left">
@@ -187,7 +189,7 @@
                 
                 
                 <section class="edu-card card1 inner-border">
-                        <h2 class="section-header tertiary">Tertiary Education</h2>
+                        <h2 class="section-header tertiary">Tertiary</h2>
                         
                         <h3 class="card-title">Life Choices</h3>
                     
@@ -214,7 +216,7 @@
                 </section>
             
                 <section class="edu-card card2 inner-border">
-                        <h2 class="section-header secondary">Secondary Education</h2>
+                        <h2 class="section-header secondary">Secondary</h2>
 
                         <div class="section part1">
                             <h3 class="card-title">Islamia College</h3>
@@ -332,10 +334,25 @@
         </section>
 
         
-        <a class="up" href="#nav">
+        <a class="up" href="#top">
             ↑
         </a>
     </footer>
     <!-- footer ends here -->
+
+    
+    <script>
+    
+
+    
+    function openNav() {
+        document.querySelector(".navbar").style.width = "100%";
+    }
+
+    function closeNav() {
+        document.querySelector(".navbar").style.width = "0";
+    }
+    
+    </script>
 </body>
 </html>
