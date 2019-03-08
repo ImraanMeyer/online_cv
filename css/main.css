@@ -466,6 +466,12 @@ body {
     grid-template-areas: "left" "right"; }
     .splash-text .left {
       text-align: center; }
+      .splash-text .left h1 {
+        font-size: 10vw; }
+    .splash-text .right {
+      height: fit-content; }
+      .splash-text .right .btns {
+        padding: 8px; }
 
   .port-grid {
     margin: 0 auto;
@@ -496,6 +502,8 @@ body {
     grid-template-areas: "card1" "card2" !important; }
     .education-grid .card1 ul {
       padding: 0; }
+    .education-grid .edu-cad .card-body {
+      padding: 0 !important; }
 
   .skills-grid {
     grid-template: "fig1" "fig2" "fig3" "fig4" "fig5" "fig6"; }
@@ -509,6 +517,12 @@ body {
 
   .timeline-circle {
     display: none; }
+
+  #no-padding {
+    padding: 2px !important; }
+
+  .up {
+    left: 80% !important; }
 
   .footer {
     height: 20vh !important; } }

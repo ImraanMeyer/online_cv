@@ -127,6 +127,7 @@
         display: none !important;
     }
 
+
     .splash-text {
         grid-template-columns: 1fr;
         grid-gap: 2em;
@@ -138,9 +139,19 @@
             "left" 
             "right";
         
-            .left {
+        .left {
             text-align: center;
+            h1 {
+                font-size: 10vw;
+            }
         }
+        .right {
+            height: fit-content;
+            .btns {
+                padding: 8px;
+            }
+        }
+
     }
 
     .port-grid {
@@ -194,6 +205,11 @@
                 padding: 0;
             }
         }
+        .edu-cad {
+            .card-body {
+                padding: 0 !important;
+            }
+        }
     }
     
     .skills-grid {
@@ -217,6 +233,14 @@
 
     .timeline-circle {
         display: none;
+    }
+
+    #no-padding {
+        padding: 2px !important;
+    }
+    
+    .up {
+        left: 80% !important;
     }
 
     .footer {
