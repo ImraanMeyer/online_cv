@@ -90,7 +90,12 @@ Tools:
 
     - Tablet responsive design implemented
 ```
+```
+08-03-2019
 
+    - Mobile responsive design implemented
+    - 'to top' icon adjusted 
+```
 ## Contributors
 
 - Imraan Meyer - 2018
