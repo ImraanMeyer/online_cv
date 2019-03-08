@@ -70,10 +70,13 @@
     
     .navbar {
             display: none !important;
-            ul li a {
+            overflow: hidden;
+            ul,
+            li,
+             a {
                 display: none !important;
             }
-        }
+    }
 
     .mobile {
         width: 0;

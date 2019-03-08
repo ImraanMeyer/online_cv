@@ -343,8 +343,11 @@ body {
     width: 100%; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
   .navbar {
-    display: none !important; }
-    .navbar ul li a {
+    display: none !important;
+    overflow: hidden; }
+    .navbar ul,
+    .navbar li,
+    .navbar a {
       display: none !important; }
 
   .mobile {
