@@ -294,7 +294,11 @@ body {
 #capital {
   text-transform: capitalize; }
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1600px) {
+  .openbtn,
+  .closebtn {
+    display: none; }
+
   .navbar {
     top: 0;
     width: 100%;
@@ -335,7 +339,7 @@ body {
     left: 0;
     width: 100%; } }
 @media only screen and (min-device-width: 320px) and (max-device-width: 600px) and (-webkit-min-device-pixel-ratio: 2) {
-  .navbar {
+  .mobile {
     width: 0;
     position: fixed !important;
     z-index: 99;
@@ -346,17 +350,17 @@ body {
     overflow-x: hidden;
     transition: all 0.4s;
     padding: 0 !important; }
-    .navbar ul {
+    .mobile ul {
       padding: 0;
       overflow-x: hidden; }
-      .navbar ul li {
+      .mobile ul li {
         padding: 1em;
         list-style: none; }
-    .navbar a {
+    .mobile a {
       text-decoration: none;
       color: #FCF7F8;
       transition: all 0.4s; }
-    .navbar a:hover {
+    .mobile a:hover {
       color: #AC7B84;
       text-decoration: none;
       transition: all .4s; }
