@@ -462,6 +462,9 @@ body h1 {
   .closebtn {
     display: none;
   }
+  .mobile {
+    display: none;
+  }
   .navbar {
     top: 0;
     width: 100%;
@@ -516,7 +519,16 @@ body h1 {
   }
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  .navbar {
+    display: none !important;
+    overflow: hidden;
+  }
+  .navbar ul,
+  .navbar li,
+  .navbar a {
+    display: none !important;
+  }
   .mobile {
     width: 0;
     position: fixed !important;
@@ -553,8 +565,7 @@ body h1 {
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #424C55;
-    color: #FCF7F8;
+    color: #AC7B84;
     padding: 10px 15px;
     opacity: .4;
     border: none;
@@ -612,7 +623,7 @@ body h1 {
     display: none;
   }
   .header {
-    min-height: 120vh;
+    min-height: 100vh;
   }
   .navbar ul {
     width: 100% !important;
@@ -647,7 +658,7 @@ body h1 {
   .splash-text {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    grid-gap: 2em;
+    grid-gap: 1em;
     -ms-grid-rows: 20vh 50vh;
         grid-template-rows: 20vh 50vh;
     margin: 0 auto;
@@ -795,36 +806,31 @@ body h1 {
 @-webkit-keyframes pulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
   }
   50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
   }
   to {
     -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
   }
 }
 
 @keyframes pulse {
   from {
     -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
   }
   50% {
     -webkit-transform: scale3d(1.05, 1.05, 1.05);
-    transform: scale3d(1.05, 1.05, 1.05);
+            transform: scale3d(1.05, 1.05, 1.05);
   }
   to {
     -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
   }
-}
-
-.pulse {
-  -webkit-animation-name: pulse;
-  animation-name: pulse;
 }
 
 @-webkit-keyframes jello {
@@ -832,35 +838,35 @@ body h1 {
   11.1%,
   to {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   22.2% {
     -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
-    transform: skewX(-12.5deg) skewY(-12.5deg);
+            transform: skewX(-12.5deg) skewY(-12.5deg);
   }
   33.3% {
     -webkit-transform: skewX(6.25deg) skewY(6.25deg);
-    transform: skewX(6.25deg) skewY(6.25deg);
+            transform: skewX(6.25deg) skewY(6.25deg);
   }
   44.4% {
     -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
-    transform: skewX(-3.125deg) skewY(-3.125deg);
+            transform: skewX(-3.125deg) skewY(-3.125deg);
   }
   55.5% {
     -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
-    transform: skewX(1.5625deg) skewY(1.5625deg);
+            transform: skewX(1.5625deg) skewY(1.5625deg);
   }
   66.6% {
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
-    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+            transform: skewX(-0.78125deg) skewY(-0.78125deg);
   }
   77.7% {
     -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg);
+            transform: skewX(0.39062deg) skewY(0.39062deg);
   }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
-    transform: skewX(-0.19531deg) skewY(-0.19531deg);
+            transform: skewX(-0.19531deg) skewY(-0.19531deg);
   }
 }
 
@@ -869,43 +875,36 @@ body h1 {
   11.1%,
   to {
     -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
   }
   22.2% {
     -webkit-transform: skewX(-12.5deg) skewY(-12.5deg);
-    transform: skewX(-12.5deg) skewY(-12.5deg);
+            transform: skewX(-12.5deg) skewY(-12.5deg);
   }
   33.3% {
     -webkit-transform: skewX(6.25deg) skewY(6.25deg);
-    transform: skewX(6.25deg) skewY(6.25deg);
+            transform: skewX(6.25deg) skewY(6.25deg);
   }
   44.4% {
     -webkit-transform: skewX(-3.125deg) skewY(-3.125deg);
-    transform: skewX(-3.125deg) skewY(-3.125deg);
+            transform: skewX(-3.125deg) skewY(-3.125deg);
   }
   55.5% {
     -webkit-transform: skewX(1.5625deg) skewY(1.5625deg);
-    transform: skewX(1.5625deg) skewY(1.5625deg);
+            transform: skewX(1.5625deg) skewY(1.5625deg);
   }
   66.6% {
     -webkit-transform: skewX(-0.78125deg) skewY(-0.78125deg);
-    transform: skewX(-0.78125deg) skewY(-0.78125deg);
+            transform: skewX(-0.78125deg) skewY(-0.78125deg);
   }
   77.7% {
     -webkit-transform: skewX(0.39062deg) skewY(0.39062deg);
-    transform: skewX(0.39062deg) skewY(0.39062deg);
+            transform: skewX(0.39062deg) skewY(0.39062deg);
   }
   88.8% {
     -webkit-transform: skewX(-0.19531deg) skewY(-0.19531deg);
-    transform: skewX(-0.19531deg) skewY(-0.19531deg);
+            transform: skewX(-0.19531deg) skewY(-0.19531deg);
   }
-}
-
-.jello {
-  -webkit-animation-name: jello;
-  animation-name: jello;
-  -webkit-transform-origin: center;
-  transform-origin: center;
 }
 
 .timeline {
@@ -1378,9 +1377,9 @@ body h1 {
   opacity: 1;
   -webkit-transition: .4s all;
   transition: .4s all;
-  -webkit-transform: scale(1.4);
-          transform: scale(1.4);
-  background: -webkit-gradient(linear, left top, left bottom, from(#64B6AC), to(#7798AB));
-  background: linear-gradient(#64B6AC, #7798AB);
+  -webkit-transform: scale(1.4) !important;
+          transform: scale(1.4) !important;
+  background: -webkit-gradient(linear, left top, right top, from(#64B6AC), to(#7798AB));
+  background: linear-gradient(to right, #64B6AC, #7798AB);
 }
 /*# sourceMappingURL=main.css.map */

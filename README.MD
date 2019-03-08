@@ -1,7 +1,7 @@
 # My Online CV
 - Project 1: Creating and designing my online CV
 
-## Setting up your workspace
+## Setting up my workspace
 
 - Created repository and cloned to desktop
 - Live link created
@@ -95,7 +95,6 @@ Tools:
 
     - Mobile responsive design implemented
     - 'to top' icon adjusted 
-    - final commit 
 ```
 ## Contributors
 

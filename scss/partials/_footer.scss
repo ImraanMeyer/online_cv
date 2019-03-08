@@ -104,8 +104,9 @@
     .up:hover {
         opacity: 1 ;
         transition: .4s all;
-        transform: scale(1.4);
-        background: linear-gradient($greensheen , $weldonblue);
+        transform: scale(1.4) !important;
+        background: linear-gradient(to right, $greensheen , $weldonblue);
     }
+
 }
 
