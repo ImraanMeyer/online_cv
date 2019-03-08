@@ -42,7 +42,7 @@
     }
 
     .header {
-        min-height: 120vh;  
+        min-height: 100vh;  
     }
     .navbar {
         ul {
@@ -75,7 +75,7 @@
     }
     .splash-text {
         grid-template-columns: 1fr;
-        grid-gap: 2em;
+        grid-gap: 1em;
         grid-template-rows: 20vh 50vh;
         margin: 0 auto;
 

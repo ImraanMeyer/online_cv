@@ -17,11 +17,22 @@
 <body>
     <header class="header" id="top">
 
+        
+        <nav class="navbar" id="nav">
+            <ul>
+                <li><a href="#top"          class="link">Home</a></li>
+                <li><a href="#portfolio"    class="link">Portfolio</a></li>
+                <li><a href="#skills"       class="link">Skills</a></li>
+                <li><a href="#education"    class="link">Education</a></li>
+                <li><a href="#experience"   class="link">Work Experience</a></li>
+            </ul>
+        </nav>
+
         <button class="openbtn" onclick="openNav()">☰</button>
-        <nav class="navbar mobile" id="nav">
+        <nav class="mobile">
             <ul>
                 <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a></li>
-                <li><a href="index.html"    class="link" onclick="closeNav()">Home</a></li>
+                <li><a href="#top"          class="link" onclick="closeNav()">Home</a></li>
                 <li><a href="#portfolio"    class="link" onclick="closeNav()">Portfolio</a></li>
                 <li><a href="#skills"       class="link" onclick="closeNav()">Skills</a></li>
                 <li><a href="#education"    class="link" onclick="closeNav()">Education</a></li>
@@ -342,17 +353,16 @@
 
     
     <script>
-    
-
-    
-    function openNav() {
-        document.querySelector(".navbar").style.width = "100%";
-    }
 
     function closeNav() {
-        document.querySelector(".navbar").style.width = "0";
+        document.querySelector(".mobile").style.width = "0";
     }
-    
+
+    function openNav() {
+        document.querySelector(".mobile").style.width = "100%";
+    }
+
+
     </script>
 </body>
 </html>

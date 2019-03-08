@@ -7,7 +7,11 @@
         display: none;
     }
 
-.navbar {
+    .mobile  {
+        display: none;
+    }
+
+    .navbar {
     top: 0;
     width: 100%;
     left: 50%;
@@ -61,9 +65,16 @@
 
 @media only screen 
     and (min-device-width: 320px)
-    and (max-device-width: 768px)
+    and (max-device-width: 767px)
     and (-webkit-min-device-pixel-ratio: 2) {
     
+    .navbar {
+            display: none !important;
+            ul li a {
+                display: none !important;
+            }
+        }
+
     .mobile {
         width: 0;
         position: fixed !important;
@@ -101,8 +112,7 @@
     .openbtn {
         font-size: 20px;
         cursor: pointer;
-        background-color: $outerspace;
-        color: $snow;
+        color: $turkishrose;
         padding: 10px 15px;
         opacity: .4;
         border: none;

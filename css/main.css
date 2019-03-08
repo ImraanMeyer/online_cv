@@ -299,6 +299,9 @@ body {
   .closebtn {
     display: none; }
 
+  .mobile {
+    display: none; }
+
   .navbar {
     top: 0;
     width: 100%;
@@ -338,7 +341,12 @@ body {
   .link:hover::after {
     left: 0;
     width: 100%; } }
-@media only screen and (min-device-width: 320px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2) {
+  .navbar {
+    display: none !important; }
+    .navbar ul li a {
+      display: none !important; }
+
   .mobile {
     width: 0;
     position: fixed !important;
@@ -368,8 +376,7 @@ body {
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #424C55;
-    color: #FCF7F8;
+    color: #AC7B84;
     padding: 10px 15px;
     opacity: .4;
     border: none; }
@@ -407,7 +414,7 @@ body {
     display: none; }
 
   .header {
-    min-height: 120vh; }
+    min-height: 100vh; }
 
   .navbar ul {
     width: 100% !important; }
@@ -432,7 +439,7 @@ body {
 
   .splash-text {
     grid-template-columns: 1fr;
-    grid-gap: 2em;
+    grid-gap: 1em;
     grid-template-rows: 20vh 50vh;
     margin: 0 auto;
     grid-template-areas: "left" "right"; }
