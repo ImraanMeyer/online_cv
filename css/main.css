@@ -221,9 +221,6 @@ body {
 .html {
   animation: jello 1.6s infinite; }
 
-.html:hover {
-  animation: 0; }
-
 .education-grid {
   display: grid;
   grid-gap: 1em;
@@ -773,10 +770,6 @@ body {
 .figure:hover .overlay {
   opacity: 1; }
 
-.img3 {
-  object-fit: contain !important;
-  object-position: center; }
-
 .content {
   color: #FCF7F8;
   position: absolute;
@@ -809,10 +802,16 @@ body {
     text-decoration: none;
     color: #7798AB;
     transition: all .4s;
-    z-index: 2; }
-  .content .visit-project:hover {
-    transition: .4s all;
-    transform: scale(1.1); }
+    z-index: 2;
+    box-shadow: 0 0 0 8px rgba(119, 152, 171, 0.582); }
+    .content .visit-project:hover {
+      transition: .4s all;
+      box-shadow: 0 0 0 4px rgba(119, 152, 171, 0.582);
+      transform: scale(1.08); }
+    .content .visit-project:focus {
+      background: #7798AB;
+      color: #FCF7F8;
+      box-shadow: 0 0 0 4px rgba(252, 247, 248, 0.582); }
 
 .footer {
   height: 28vh;
@@ -875,7 +874,7 @@ body {
     z-index: 6;
     height: 40px;
     width: 40px;
-    background: #424C55;
+    background: #64B6AC;
     border-radius: 50%;
     display: grid;
     place-content: center;
@@ -887,6 +886,6 @@ body {
     opacity: 1;
     transition: .4s all;
     transform: scale(1.4) !important;
-    background: linear-gradient(to right, #64B6AC, #7798AB); }
+    background: #7798AB; }
 
 /*# sourceMappingURL=main.css.map */

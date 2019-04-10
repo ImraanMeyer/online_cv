@@ -90,11 +90,6 @@
     opacity: 1;
 }
 
-.img3 {
-    object-fit: contain !important;
-    object-position: center;
-}
-
 .content {
     color: $snow;
     position: absolute;
@@ -132,10 +127,17 @@
         color: #7798AB;
         transition: all .4s;
         z-index: 2;
-    }
-    .visit-project:hover {
-        transition: .4s all;
-        transform: scale(1.1);
+        box-shadow: 0 0 0 8px rgba(119, 152, 171, 0.582);
+        &:hover {
+            transition: .4s all;
+            box-shadow: 0 0 0 4px rgba(119, 152, 171, 0.582);
+            transform: scale(1.08);
+        }
+        &:focus {
+            background: #7798AB;
+            color: #FCF7F8;
+            box-shadow: 0 0 0 4px rgba(252, 247, 248, 0.582);
+        }
     }
 }
 
