@@ -63,6 +63,7 @@ body {
             font-size: 4vw;
             color: $outerspace;
         }
+        
 }
 
 .wave-img {
@@ -209,8 +210,6 @@ body {
     transition: 0.5s ease-in all;
     z-index: 1;
     clip-path: polygon(50% 0%, 100% 0, 100% 100%, 50% 100%, 0 100%, 0 0);
-
-
 }
 
 .skills-grid .skill:hover .icon {
@@ -219,7 +218,7 @@ body {
     width: 80px;
     height: 80px;
     transition: .5s all;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    border-radius: 50%;
 
 }
 

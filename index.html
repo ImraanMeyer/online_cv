@@ -15,9 +15,9 @@
  
 </head>
 <body>
+    <!-- Header / Hero -->
     <header class="header" id="top">
-
-        
+        <!-- Navbar (dekstop)-->
         <nav class="navbar" id="nav">
             <ul>
                 <li><a href="#top"          class="link">Home</a></li>
@@ -27,7 +27,9 @@
                 <li><a href="#experience"   class="link">Work Experience</a></li>
             </ul>
         </nav>
+        <!-- Navbar fin -->
 
+        <!-- Navbar (mobile) -->
         <button class="openbtn" onclick="openNav()">☰</button>
         <nav class="mobile">
             <ul>
@@ -39,8 +41,9 @@
                 <li><a href="#experience"   class="link" onclick="closeNav()">Work Experience</a></li>
             </ul>
         </nav>
+        <!-- Navbar fin (mobile) -->
 
-            
+        <!-- Text box on hero section -->
         <section class="splash-text">
             <section class="left">
                     <h1>Imraan Meyer</h1>
@@ -59,23 +62,30 @@
                         +27 785851287
                     </sec>
                 </section>
-                <a class="btns btn1" href="#">Download CV</a>
+                <a class="btns btn1" href="documents/CV of Imraan Meyer.pdf"  download="CV of Imraan Meyer">Download CV</a>
                 <a class="btns btn2" href="#footer">Contact</a>
             </section>
         </section>
+        <!-- Text box fin -->
 
+        <!-- image inserted for wave effect -->
         <img class="wave-img" src="images/wave.png" alt="" srcset="">
     </header>
 
+    <!-- Portfoilio section -->
     <section class="portfolio" id="portfolio">
         <section class="main-text" id="no-padding">
+            <!-- Title -->
             <h1 class="blue-underline">Portfolio</h1>
 
+            <!-- Portfoilio grid -->
             <section class="port-grid">
-                
+                <!-- Portfolio item 1 -->
                 <div class="figure figure-1">
+                    <!-- Screenshot of work place -->
                     <img class="con-img" src="images/project1.png" alt="Avatar" class="image">
                     
+                    <!-- Overlay to display once hovered -->
                     <div class="overlay">
                         <div class="content">
                             <h3 class="title-overlay">Outdoor Adventures</h3>
@@ -83,10 +93,12 @@
                             <p class="description">
                                     A website containing outdoor adventures!
                             </p>
-                            <a class="visit-project" target="blank" href="https://imraanmeyer.github.io/outdoor-adventures">Check it out!</a>
+                            <a class="visit-project" target="_blank" href="https://imraanmeyer.github.io/outdoor-adventures">visit project</a>
                         </div>
                     </div>
+                    <!-- Overlay end -->
                 </div>
+                <!-- Portfolio item end -->
 
                 <div class="figure figure-2">
                     <img class="con-img" src="images/mason.png" alt="Avatar" class="image">
@@ -98,37 +110,37 @@
                             <p class="description">
                                     A masonry album using pictures of my fellow classmates. 
                             </p>
-                            <a class="visit-project" target="blank" href="https://imraanmeyer.github.io/masonry_album/">Check it out!</a>
+                            <a class="visit-project" target="_blank" href="https://imraanmeyer.github.io/masonry_album/">visit project</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="figure figure-3">
-                    <img class="con-img img3" src="images/comingsoon.png" alt="Avatar" class="image">
+                    <img class="con-img" src="images/project3.png" alt="Avatar" class="image">
                     
                     <div class="overlay">
                         <div class="content">
                             <h3 class="title-overlay">Fashion Shop</h3>
 
                             <p class="description">
-                                Project in development!
+                                Building a functional, minimal, eCommerce website!
                             </p>
-                            <a class="visit-project" target="blank" href="https://imraanmeyer.github.io/fashion-shop/">Check it out!</a>
+                            <a class="visit-project" target="_blank" href="https://imraanmeyer.github.io/fashion-shop/">visit project</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="figure figure-4">
-                    <img class="con-img img3" src="images/comingsoon.png" alt="Avatar" class="image">
+                    <img class="con-img" src="images/project4.png" alt="Avatar" class="image">
                     
                     <div class="overlay">
                         <div class="content">
-                            <h3 class="title-overlay">Coming Soon</h3>
+                            <h3 class="title-overlay">Mobile Blog</h3>
 
                             <p class="description">
-                                Project in development!
+                                Building a CRUD blog, with user authentication!
                             </p>
-                            <a class="visit-project" target="blank" href="#">Check it out!</a>
+                            <a class="visit-project" target="_blank" href="http://mobile-blog-flagship-daily.1d35.starter-us-east-1.openshiftapps.com/">visit project</a>
                         </div>
                     </div>
                 </div>
@@ -314,25 +326,25 @@
         <section class="icons">
             <ul>
                 <li class="social social1">
-                    <a href="https://github.com/ImraanMeyer" target="blank" class="github"> 
+                    <a href="https://github.com/ImraanMeyer" target="_blank" class="github"> 
                         <i class="fab fa-github-alt"></i>
                     </a>
                 </li>
                 
                 <li class="social social2">
-                    <a href="https://slack.com/" target="blank" class="slack">
+                    <a href="https://slack.com/" target="_blank" class="slack">
                         <i class="fab fa-slack"></i>
                     </a>
                 </li>
 
                 <li class="social social3">
-                    <a href="https://twitter.com/iamimraaan_?lang=en" target="blank" class="twitter">
+                    <a href="https://twitter.com/iamimraaan_?lang=en" target="_blank" class="twitter">
                         <i class="fab fa-twitter"></i>
                     </a>
                 </li>
 
                 <li class="social social4">
-                    <a href="https://www.linkedin.com/in/imraan-meyer-536476175/" target="blank" class="linked">
+                    <a href="https://www.linkedin.com/in/imraan-meyer-536476175/" target="_blank" class="linked">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
                 </li>
@@ -352,16 +364,18 @@
 
     
     <script>
+        function closeNav() {
+            document.querySelector(".mobile").style.width = "0";
+        }
 
-    function closeNav() {
-        document.querySelector(".mobile").style.width = "0";
-    }
-
-    function openNav() {
-        document.querySelector(".mobile").style.width = "100%";
-    }
-
-
+        function openNav() {
+            document.querySelector(".mobile").style.width = "100%";
+        }
     </script>
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.js"
+    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+    crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

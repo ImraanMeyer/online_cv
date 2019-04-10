@@ -183,7 +183,7 @@ body {
   width: 80px;
   height: 80px;
   transition: .5s all;
-  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); }
+  border-radius: 50%; }
 
 .skills-grid .skill .icon .fab {
   position: absolute;
@@ -746,7 +746,7 @@ body {
 
 .figure {
   position: relative;
-  height: 60vh;
+  height: 46vh;
   width: 46vw;
   margin: 0 auto; }
 
@@ -801,9 +801,10 @@ body {
   .content .visit-project {
     text-transform: uppercase;
     background: #FCF7F8;
+    margin: 0 auto;
     border-radius: 2em;
-    width: 100%;
-    padding: 1em;
+    width: 50%;
+    padding: .4em;
     grid-area: button;
     text-decoration: none;
     color: #7798AB;
@@ -881,7 +882,7 @@ body {
     color: #FCF7F8;
     text-decoration: none;
     transition: .4s all;
-    opacity: 0.4; }
+    opacity: 0; }
   .footer .up:hover {
     opacity: 1;
     transition: .4s all;
