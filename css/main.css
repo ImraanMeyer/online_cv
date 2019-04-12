@@ -468,6 +468,9 @@ body {
   .rotate-img {
     display: none !important; }
 
+  .visit-project {
+    width: 100% !important; }
+
   .splash-text {
     grid-template-columns: 1fr;
     grid-gap: 2em;
@@ -480,9 +483,17 @@ body {
       .splash-text .left h1 {
         font-size: 10vw; }
     .splash-text .right {
-      height: fit-content; }
+      height: fit-content;
+      grid-template-columns: 1fr;
+      grid-template-areas: "hi" "text" "personal" "btn1" "btn2"; }
       .splash-text .right .btns {
-        padding: 8px; }
+        padding: 8px;
+        margin-top: 0; }
+        .splash-text .right .btns:hover {
+          transform: scale(1);
+          box-shadow: none; }
+      .splash-text .right .btn1 {
+        margin-top: .2em; }
 
   .port-grid {
     margin: 0 auto;

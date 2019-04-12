@@ -127,7 +127,9 @@
         display: none !important;
     }
 
-
+    .visit-project {
+        width: 100% !important;
+    }
     .splash-text {
         grid-template-columns: 1fr;
         grid-gap: 2em;
@@ -147,8 +149,23 @@
         }
         .right {
             height: fit-content;
+            grid-template-columns: 1fr;
+            grid-template-areas: 
+            "hi"
+            "text"
+            "personal"
+            "btn1" 
+            "btn2";
             .btns {
                 padding: 8px;
+                margin-top: 0;
+                &:hover {
+                    transform: scale(1);
+                    box-shadow: none;
+                }
+            }
+            .btn1 {
+                margin-top: .6em;
             }
         }
 
