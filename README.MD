@@ -31,7 +31,7 @@
 ## Live Link
 
 
-https://imraanmeyer.github.io/online_cv_v2/index.html
+https://imraanmeyer.github.io/online_cv/
 
 
 
