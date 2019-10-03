@@ -47,6 +47,11 @@ body {
     width: 100%;
 }   
 
+.portfolio {
+    display: flex;
+    justify-content: center
+}
+
 .header {
     background-image:linear-gradient(#fff, $weldonblue) , url(../images/bg3.jpg);
     background-size: cover;

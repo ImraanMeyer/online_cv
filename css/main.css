@@ -39,6 +39,10 @@ body {
   min-height: 100vh;
   width: 100%; }
 
+.portfolio {
+  display: flex;
+  justify-content: center; }
+
 .header {
   background-image: linear-gradient(#fff, #7798AB), url(../images/bg3.jpg);
   background-size: cover;
@@ -291,7 +295,7 @@ body {
 #capital {
   text-transform: capitalize; }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1600px) {
+@media screen and (min-device-width: 768px) and (max-device-width: 1920px) {
   .openbtn,
   .closebtn {
     display: none; }
@@ -389,7 +393,7 @@ body {
     top: 0;
     right: 25px;
     font-size: 36px; } }
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+@media screen and (min-device-width: 1080px) and (max-device-width: 1920px) {
   .float-nav,
   .main-nav {
     display: none; }
@@ -408,7 +412,7 @@ body {
       grid-area: fig5; }
     .skills-grid .github {
       grid-area: fig6; } }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1200px) {
   .wave-img,
   .rotate-img {
     display: none; }
@@ -493,7 +497,7 @@ body {
           transform: scale(1);
           box-shadow: none; }
       .splash-text .right .btn1 {
-        margin-top: .2em; }
+        margin-top: .6em; }
 
   .port-grid {
     margin: 0 auto;
@@ -754,8 +758,8 @@ body {
 
 .figure {
   position: relative;
-  height: 46vh;
-  width: 46vw;
+  height: 30vh;
+  width: 30vw;
   margin: 0 auto; }
 
 .con-img {
