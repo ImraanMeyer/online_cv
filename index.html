@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,19 +13,20 @@
 
     <title>Imraan Meyer | Junior Web Developer</title>
     <link rel="icon" type="image/ico" href="images/logo(crop).png" />
- 
+
 </head>
+
 <body>
     <!-- Header / Hero -->
     <header class="header" id="top">
         <!-- Navbar (dekstop)-->
         <nav class="navbar" id="nav">
             <ul>
-                <li><a href="#top"          class="link">Home</a></li>
-                <li><a href="#portfolio"    class="link">Portfolio</a></li>
-                <li><a href="#skills"       class="link">Skills</a></li>
-                <li><a href="#education"    class="link">Education</a></li>
-                <li><a href="#experience"   class="link">Work Experience</a></li>
+                <li><a href="#top" class="link">Home</a></li>
+                <li><a href="#portfolio" class="link">Portfolio</a></li>
+                <li><a href="#skills" class="link">Skills</a></li>
+                <li><a href="#education" class="link">Education</a></li>
+                <li><a href="#experience" class="link">Work Experience</a></li>
             </ul>
         </nav>
         <!-- Navbar fin -->
@@ -34,11 +36,11 @@
         <nav class="mobile">
             <ul>
                 <li><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times; </a></li>
-                <li><a href="#top"          class="link" onclick="closeNav()">Home</a></li>
-                <li><a href="#portfolio"    class="link" onclick="closeNav()">Portfolio</a></li>
-                <li><a href="#skills"       class="link" onclick="closeNav()">Skills</a></li>
-                <li><a href="#education"    class="link" onclick="closeNav()">Education</a></li>
-                <li><a href="#experience"   class="link" onclick="closeNav()">Work Experience</a></li>
+                <li><a href="#top" class="link" onclick="closeNav()">Home</a></li>
+                <li><a href="#portfolio" class="link" onclick="closeNav()">Portfolio</a></li>
+                <li><a href="#skills" class="link" onclick="closeNav()">Skills</a></li>
+                <li><a href="#education" class="link" onclick="closeNav()">Education</a></li>
+                <li><a href="#experience" class="link" onclick="closeNav()">Work Experience</a></li>
             </ul>
         </nav>
         <!-- Navbar fin (mobile) -->
@@ -46,23 +48,25 @@
         <!-- Text box on hero section -->
         <section class="splash-text">
             <section class="left">
-                    <h1>Imraan Meyer</h1>
-                    <h2>Junior Web Developer</h2> 
+                <h1>Imraan Meyer</h1>
+                <h2>Junior Web Developer</h2>
             </section>
-            
+
             <section class="right">
                 <h3 id="bolder">Hi!</h3>
-                <p class="info">I am an aspiring web developer, I enjoy UI/UX as well learning new things and improving on my skills!</p>
+                <p class="info">I am an aspiring web developer, I enjoy UI/UX as well learning new things and
+                    improving on my skills!</p>
                 <section class="personal">
                     <sec class="text email">
-                            imraan.meyer97@gmail.com
+                        imraan.meyer97@gmail.com
                     </sec>
-    
+
                     <sec class="text phone">
                         +27 785851287
                     </sec>
                 </section>
-                <a class="btns btn1" href="documents/CV of Imraan Meyer.pdf"  download="CV of Imraan Meyer">Download CV</a>
+                <a class="btns btn1" href="documents/CV of Imraan Meyer.pdf" download="CV of Imraan Meyer">Download
+                    CV</a>
                 <a class="btns btn2" href="#footer">Contact</a>
             </section>
         </section>
@@ -72,150 +76,160 @@
         <img class="wave-img" src="images/wave.png" alt="" srcset="">
     </header>
 
-    <!-- Portfoilio section -->
-    <section class="portfolio" id="portfolio">
-        <section class="main-text" id="no-padding">
-            <!-- Title -->
-            <h1 class="blue-underline">Portfolio</h1>
+    <div class="container">
+        <!-- Portfoilio section -->
+        <section class="portfolio" id="portfolio">
+            <section class="main-text" id="no-padding">
+                <!-- Title -->
+                <h1 class="blue-underline">Portfolio</h1>
 
-            <!-- Portfoilio grid -->
-            <section class="port-grid">
-                <!-- Portfolio item 1 -->
-                <div class="figure figure-1">
-                    <!-- Screenshot of work place -->
-                    <img class="con-img" src="images/project1.png" alt="Avatar" class="image">
-                    
-                    <!-- Overlay to display once hovered -->
-                    <div class="overlay">
-                        <div class="content">
-                            <h3 class="title-overlay">Outdoor Adventures</h3>
+                <!-- Portfoilio grid -->
+                <section class="port-grid">
+                    <!-- Portfolio item 1 -->
+                    <div class="figure figure-1">
+                        <!-- Screenshot of work place -->
+                        <img class="con-img" src="images/project1.png" alt="Avatar" class="image">
 
-                            <p class="description">
+                        <!-- Overlay to display once hovered -->
+                        <div class="overlay">
+                            <div class="content">
+                                <h3 class="title-overlay">Outdoor Adventures</h3>
+
+                                <p class="description">
                                     A website containing outdoor adventures!
-                            </p>
-                            <a class="visit-project" target="_blank" href="https://imraanmeyer.github.io/outdoor-adventures">visit project</a>
+                                </p>
+                                <a class="visit-project" target="_blank"
+                                    href="https://imraanmeyer.github.io/outdoor-adventures">visit project</a>
+                            </div>
+                        </div>
+                        <!-- Overlay end -->
+                    </div>
+                    <!-- Portfolio item end -->
+
+                    <div class="figure figure-2">
+                        <img class="con-img" src="images/mason.png" alt="Avatar" class="image">
+
+                        <div class="overlay">
+                            <div class="content">
+                                <h3 class="title-overlay">Masonry Gallery</h3>
+
+                                <p class="description">
+                                    A masonry album using pictures of my fellow classmates.
+                                </p>
+                                <a class="visit-project" target="_blank"
+                                    href="https://imraanmeyer.github.io/masonry_album/">visit project</a>
+                            </div>
                         </div>
                     </div>
-                    <!-- Overlay end -->
-                </div>
-                <!-- Portfolio item end -->
 
-                <div class="figure figure-2">
-                    <img class="con-img" src="images/mason.png" alt="Avatar" class="image">
-                    
-                    <div class="overlay">
-                        <div class="content">
-                            <h3 class="title-overlay">Masonry Gallery</h3>
+                    <div class="figure figure-3">
+                        <img class="con-img" src="images/project3.png" alt="Avatar" class="image">
 
-                            <p class="description">
-                                    A masonry album using pictures of my fellow classmates. 
-                            </p>
-                            <a class="visit-project" target="_blank" href="https://imraanmeyer.github.io/masonry_album/">visit project</a>
+                        <div class="overlay">
+                            <div class="content">
+                                <h3 class="title-overlay">Fashion Shop</h3>
+
+                                <p class="description">
+                                    Building a functional, minimal, eCommerce website!
+                                </p>
+                                <a class="visit-project" target="_blank"
+                                    href="https://imraanmeyer.github.io/fashion-shop/">visit project</a>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="figure figure-3">
-                    <img class="con-img" src="images/project3.png" alt="Avatar" class="image">
-                    
-                    <div class="overlay">
-                        <div class="content">
-                            <h3 class="title-overlay">Fashion Shop</h3>
+                    <div class="figure figure-4">
+                        <img class="con-img" src="images/project4.png" alt="Avatar" class="image">
 
-                            <p class="description">
-                                Building a functional, minimal, eCommerce website!
-                            </p>
-                            <a class="visit-project" target="_blank" href="https://imraanmeyer.github.io/fashion-shop/">visit project</a>
+                        <div class="overlay">
+                            <div class="content">
+                                <h3 class="title-overlay">Mobile Blog</h3>
+
+                                <p class="description">
+                                    Building a CRUD blog, with user authentication!
+                                </p>
+                                <a class="visit-project" target="_blank"
+                                    href="http://mobile-blog-flagship-daily.1d35.starter-us-east-1.openshiftapps.com/">visit
+                                    project</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </section>
+            </section>
+        </section>
 
-                <div class="figure figure-4">
-                    <img class="con-img" src="images/project4.png" alt="Avatar" class="image">
-                    
-                    <div class="overlay">
-                        <div class="content">
-                            <h3 class="title-overlay">Mobile Blog</h3>
+    </div>
+    <!-- portfolio section ends -->
 
-                            <p class="description">
-                                Building a CRUD blog, with user authentication!
-                            </p>
-                            <a class="visit-project" target="_blank" href="http://mobile-blog-flagship-daily.1d35.starter-us-east-1.openshiftapps.com/">visit project</a>
+
+    <div class="container">
+        <!-- skills section starts -->
+        <section class="skills-container" id="skills">
+            <section class="main-text">
+                <h1 class="green-underline">Skills</h1>
+
+                <div class="skills-grid">
+                    <sec class="skill html" id="html">
+
+                        <div class="icon"><i class="fab fa-html5"></i></div>
+                        <div class="skill-content">
+                            <h3>HTML</h3>
                         </div>
-                    </div>
+                    </sec>
+
+                    <sec class="skill css">
+                        <div class="icon"><i class="fab fa-css3-alt"></i></div>
+                        <div class="skill-content">
+                            <h3>CSS</h3>
+                        </div>
+                    </sec>
+
+                    <sec class="skill js">
+                        <div class="icon"><i class="fab fa-js-square"></i></div>
+                        <div class="skill-content">
+                            <h3>JavaScript</h3>
+                        </div>
+                    </sec>
+
+                    <sec class="skill sass">
+                        <div class="icon"><i class="fab fa-sass"></i></div>
+                        <div class="skill-content">
+                            <h3>SASS</h3>
+                        </div>
+                    </sec>
+
+                    <sec class="skill node">
+                        <div class="icon"><i class="fab fa-node"></i></div>
+                        <div class="skill-content">
+                            <h3>Node.js</h3>
+                        </div>
+                    </sec>
+
+                    <sec class="skill github">
+                        <div class="icon"><i class="fab fa-github-alt"></i></div>
+                        <div class="skill-content">
+                            <h3>Github</h3>
+                        </div>
+                    </sec>
+
                 </div>
             </section>
         </section>
-    </section>
-    <!-- portfolio section ends -->
+        <!-- skills section ends -->
 
-    <!-- skills section starts -->
-    <section class="skills-container" id="skills">
-        <section class="main-text">
-            <h1 class="green-underline">Skills</h1>
+        <!-- education contact starts -->
+        <section class="education-container" id="education">
+            <section class="main-text" id="no-padding">
+                <h1 class="blue-underline">Education</h1>
 
-            <div class="skills-grid">
-                <sec class="skill html" id="html">
-                    
-                    <div class="icon"><i class="fab fa-html5"></i></div>
-                    <div class="skill-content">
-                        <h3>HTML</h3>
-                    </div>
-                </sec>
+                <article class="education-grid">
 
-                <sec class="skill css">
-                    <div class="icon"><i class="fab fa-css3-alt"></i></div>
-                    <div class="skill-content">
-                        <h3>CSS</h3>
-                    </div>
-                </sec>
 
-                <sec class="skill js">
-                    <div class="icon"><i class="fab fa-js-square"></i></div>
-                    <div class="skill-content">
-                        <h3>JavaScript</h3>
-                    </div>
-                </sec>
-
-                <sec class="skill sass">
-                    <div class="icon"><i class="fab fa-sass"></i></div>
-                    <div class="skill-content">
-                        <h3>SASS</h3>
-                    </div>
-                </sec>
-
-                <sec class="skill node">
-                    <div class="icon"><i class="fab fa-node"></i></div>
-                    <div class="skill-content">
-                        <h3>Node.js</h3>
-                    </div>
-                </sec>
-
-                <sec class="skill github">
-                    <div class="icon"><i class="fab fa-github-alt"></i></div>
-                    <div class="skill-content">
-                        <h3>Github</h3>
-                    </div>  
-                </sec>
-
-            </div>
-        </section>
-    </section>
-    <!-- skills section ends -->
-
-    <!-- education contact starts -->
-    <section class="education-container" id="education">
-        <section class="main-text" id="no-padding">
-            <h1 class="blue-underline">Education</h1>
-
-            <article class="education-grid">
-                
-                
-                <section class="edu-card card1 inner-border">
+                    <section class="edu-card card1 inner-border">
                         <h2 class="section-header tertiary">Tertiary</h2>
-                        
+
                         <h3 class="card-title">Life Choices</h3>
-                    
+
                         <sec class="timezone">
                             6 Months Cource (2018 - 2019)
                         </sec>
@@ -224,60 +238,61 @@
                             <ul>
                                 <h4>Subjects</h4>
                                 <li id="capital">
-                                        Programming, professional development, design thinking
+                                    Programming, professional development, design thinking
                                 </li>
-                                
+
                                 <h4>Programming Languages</h4>
                                 <li>
-                                    HTML and Bootstrap Framework, CSS (SASS and 
+                                    HTML and Bootstrap Framework, CSS (SASS and
                                     SCSS), Javascript (Node.js, Express.js, Mongoose,
                                     jQuery, React.js), Mongodb, MySQL
                                 </li>
                             </ul>
-                                
+
                         </sec>
-                </section>
-            
-                <section class="edu-card card2 inner-border">
+                    </section>
+
+                    <section class="edu-card card2 inner-border">
                         <h2 class="section-header secondary">Secondary</h2>
 
                         <div class="section part1">
                             <h3 class="card-title">Islamia College</h3>
-                
+
                             <sec class="timezone">
                                 2015 (Matric)
                             </sec>
-        
+
                             <sec class="card-body">
                                 <p>I spent my entire schooling career at Islamia Boys College.</p>
-                                <p>I achieved most improved award for CAT after discovering that I have a passion for all things technology related.</p>
+                                <p>I achieved most improved award for CAT after discovering that I have a passion for
+                                    all things technology related.</p>
                             </sec>
                         </div>
 
                         <div class="section part2">
                             <h3 class="card-title">Darun Naim</h3>
-                
+
                             <sec class="timezone">
                                 2016 (1 year)
                             </sec>
-        
+
                             <sec class="card-body">
                                 <p>Spent 1 year learning and understanding the meaning of the Holy Quraan</p>
                             </sec>
                         </div>
-                </section>
+                    </section>
 
-                
-            </article>
-            
+
+                </article>
+
+            </section>
         </section>
-    </section>
-    <!-- education secion ends -->
+        <!-- education secion ends -->
 
-    <!-- work experience section starts -->
-    <section class="work-xp" id="experience">
-        <section class="main-text">
-            <h1 class="green-underline">Work Experience</h1>
+        <!-- work experience section starts -->
+        <section class="work-xp" id="experience">
+            <section class="main-text">
+                <h1 class="green-underline">Work Experience</h1>
 
                 <ul class="timeline">
                     <li>
@@ -292,7 +307,8 @@
                             </div>
 
                             <div class="timeline-content">
-                                <p>Knowing what was trending in the tech industry was part of my job and also became one of my biggest intrest.</p>
+                                <p>Knowing what was trending in the tech industry was part of my job and also became one
+                                    of my biggest intrest.</p>
                             </div>
                         </div>
                     </li>
@@ -302,22 +318,24 @@
                         <div class="timeline-circle two">1</div>
 
                         <div class="timeline-block">
-                            
+
                             <div class="timeline-heading">
                                 <h2 class="timeline-title">Soviet</h2>
                                 <p class="grey">2015 (3 Months)</p>
                             </div>
 
                             <div class="timeline-content">
-                                <p>Working in Soviet was a necessary, as I need the experience to enter a work enviroment.</p>
+                                <p>Working in Soviet was a necessary, as I need the experience to enter a work
+                                    enviroment.</p>
                             </div>
-                            
+
                         </div>
                     </li>
-                </ul>  
+                </ul>
+            </section>
         </section>
-    </section>
-    <!-- work xp section ends -->
+        <!-- work xp section ends -->
+    </div>
 
     <!-- footer starts here -->
     <footer class="footer" id="footer">
@@ -326,11 +344,11 @@
         <section class="icons">
             <ul>
                 <li class="social social1">
-                    <a href="https://github.com/ImraanMeyer" target="_blank" class="github"> 
+                    <a href="https://github.com/ImraanMeyer" target="_blank" class="github">
                         <i class="fab fa-github-alt"></i>
                     </a>
                 </li>
-                
+
                 <li class="social social2">
                     <a href="https://slack.com/" target="_blank" class="slack">
                         <i class="fab fa-slack"></i>
@@ -350,19 +368,18 @@
                 </li>
             </ul>
         </section>
-        
+
         <section class="copywrite">
             <p id="bottom">© Designed by Imraan Meyer | Junior Web Developer</p>
         </section>
 
-        
+
         <a class="up" href="#top">
             ↑
         </a>
     </footer>
     <!-- footer ends here -->
 
-    
     <script>
         closeNav = () => {
             document.querySelector(".mobile").style.width = "0";
@@ -372,10 +389,9 @@
             document.querySelector(".mobile").style.width = "100%";
         }
     </script>
-    <script
-    src="https://code.jquery.com/jquery-2.2.4.js"
-    integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
-    crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js"
+        integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
+
 </html>
