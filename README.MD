@@ -27,6 +27,9 @@
 
 - Linked main.css to index.html
 
+## Skills Section
+
+![Image of Skills Section](./images/screenshot.png)
 
 ## Live Link
 
