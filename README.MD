@@ -29,7 +29,7 @@
 
 ## Skills Section
 
-![Image of Skills Section](./images/screenshot.png)
+![Image of Skills Section](https://github.com/ImraanMeyer/online_cv/blob/master/images/screenshot.png)
 
 ## Live Link
 
